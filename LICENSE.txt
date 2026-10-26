@@ -6,3 +6,8 @@ https://polyhaven.com/a/metal_plate_02
 License: CC0 https://polyhaven.com/license
 
 Rest of the map is CC BY SA
+
+Coast Sand Rocks 02 — Rob Tuytel (Poly Haven)
+https://polyhaven.com/a/coast_sand_rocks_02
+Diffuse, OpenGL normal, AO/Roughness/Metallic, and displacement maps (2K), CC0.
+https://polyhaven.com/license

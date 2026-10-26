@@ -18,6 +18,7 @@ SCRATCH = {'.prt', '.lin', '.srf', '.bak', '.tmp', '.log', '.dpk', '.pk3', '.pyc
 AUTHORING = {'.map', '.obj', '.mtl', '.blend', '.psd', '.xcf', '.py', '.sh', '.ps1', '.bat'}
 EXCLUDED_DIRS = {'build', '__pycache__', 'tools', 'devassets'}
 # Both Quake and native OpenGL cubemap faces need lossless edges to avoid seams.
+# Height maps also stay lossless: block artifacts would alter the relief geometry.
 SKY_FACE_SUFFIXES = ('_bk', '_dn', '_ft', '_lf', '_rt', '_up',
                      '_px', '_nx', '_py', '_ny', '_pz', '_nz')
 
@@ -37,14 +38,32 @@ def available_cpus():
         return os.cpu_count() or 1
 
 
+def shader_normal_maps(source):
+    """Collect simple normalMap paths; naming conventions remain a fallback."""
+    paths = set()
+    for shader in (source / 'scripts').rglob('*.shader'):
+        text = re.sub(r'/\*.*?\*/|//[^\n]*', '', shader.read_text(), flags=re.S)
+        for match in re.finditer(r'(?im)^\s*normalMap\s+([^\s{}]+)', text):
+            path = Path(match[1].strip('"'))
+            if path.suffix.lower() in PRIORITY:
+                path = path.with_suffix('')
+            paths.add(path.as_posix().lower())
+    return paths
+
+
+def is_normal_map(rel, shader_paths):
+    return (rel.with_suffix('').as_posix().lower() in shader_paths
+            or rel.stem.lower().endswith(('_n', '_norm', '_normal')))
+
+
 def convert_file(task):
-    rel, path, stage, temporary, crunch, helpers, keep_sources = task
+    rel, path, stage, temporary, crunch, helpers, keep_sources, normal_map = task
     ext = rel.suffix.lower()
     target = rel
     action = 'copy'
     if ext in RASTER:
         lossless = ((rel.parts[0] == 'maps' and rel.name.startswith('lm_'))
-                    or rel.stem.lower().endswith(SKY_FACE_SUFFIXES + ('_nh',)))
+                    or rel.stem.lower().endswith(SKY_FACE_SUFFIXES + ('_nh', '_h', '_height', '_disp', '_displacement')))
         target = rel.with_suffix('.webp' if lossless else '.crn')
         action = 'lossless-webp' if lossless else 'crunch'
         dst = stage / target
@@ -60,8 +79,11 @@ def convert_file(task):
                         tga = Path(image_work) / 'input.tga'
                         image.save(tga, 'TGA')
                         cmd = [crunch, '-helperThreads', str(helpers), '-noNormalDetection', '-file', str(tga)]
-                        if rel.stem.endswith(('_n','_norm','_normal')):
-                            cmd += ['-dxn', '-renormalize', '-rtopmip']
+                        if normal_map:
+                            # Vector data must be filtered linearly, not as sRGB.
+                            cmd += ['-dxn', '-gamma', '1.0', '-renormalize', '-rtopmip']
+                            if rel.parts[0].lower() == 'textures':
+                                cmd += ['-wrap']
                         cmd += ['-quality', '255', '-out', str(dst)]
                         result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
                         if result.returncode or not dst.is_file() or not dst.stat().st_size:
@@ -74,7 +96,7 @@ def convert_file(task):
         dst = stage / target
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(path, dst)
-    return {'source':str(rel), 'packaged':str(target), 'action':action}
+    return {'source':str(rel), 'packaged':str(target), 'action':('crunch-dxn' if normal_map and action == 'crunch' else action)}
 
 
 def main():
@@ -108,6 +130,7 @@ def main():
     output = args.output_dir.resolve() / f'map-kolonia_{args.version}.dpk'
     if output.exists():
         fail(f'Refusing to overwrite {output}; use a new version or remove it yourself.')
+    normal_maps = shader_normal_maps(source)
     files = {}
     for path in sorted(source.rglob('*')):
         rel = path.relative_to(source)
@@ -154,7 +177,7 @@ def main():
         helpers = min(16, max(0, args.threads // max(1, jobs) - 1))
         print(f'CPU budget: {args.threads}; workers: {jobs}; crunch helpers per worker: {helpers}', flush=True)
         with ProcessPoolExecutor(max_workers=max(1, jobs)) as pool:
-            futures = [pool.submit(convert_file, (rel, path, stage, temporary, crunch, helpers, args.include_source_images)) for rel, path in tasks]
+            futures = [pool.submit(convert_file, (rel, path, stage, temporary, crunch, helpers, args.include_source_images, is_normal_map(rel, normal_maps))) for rel, path in tasks]
             try:
                 for future in as_completed(futures):
                     entry = future.result()

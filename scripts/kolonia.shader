@@ -2,7 +2,7 @@ textures/kolonia/ivory
 {
  qer_editorImage textures/kolonia/ship_panel_d
  q3map_nonplanar
- q3map_shadeAngle 55
+ q3map_shadeAngle 1 // Keep flat panels hard; preserve authored model normals.
  {
  diffuseMap textures/kolonia/ship_panel_d
  normalMap textures/kolonia/ship_panel_n
@@ -71,7 +71,7 @@ textures/kolonia/bio
  q3map_shadeAngle 60
  qer_editorImage textures/kolonia/bio_d
 	q3map_surfaceLight 850
- q3map_lightRGB 0.22 0.65 0.50
+ q3map_lightRGB 0.90 0.95 1.00
 	q3map_lightImage textures/kolonia/bio_d
 	{
 		diffuseMap textures/kolonia/bio_d
@@ -186,6 +186,7 @@ textures/kolonia/cool_light
  qer_editorImage textures/kolonia/diffuser_d
  q3map_nonplanar
  q3map_surfaceLight 1050
+ q3map_lightSubdivide 32 // Distribute shadow samples along the light strip.
  q3map_lightRGB 0.65 0.82 1
  q3map_lightImage textures/kolonia/diffuser_d
  {
@@ -212,27 +213,31 @@ textures/kolonia/cool_norad
 
 textures/kolonia/wet_rock
 {
- qer_editorImage textures/kolonia/wet_rock_d
+ qer_editorImage textures/kolonia/coast_sand_rocks_02_d
  q3map_nonplanar
  q3map_shadeAngle 60
  {
- diffuseMap textures/kolonia/wet_rock_d
- normalMap textures/kolonia/strata_n
+ diffuseMap textures/kolonia/coast_sand_rocks_02_d
+ normalMap textures/kolonia/coast_sand_rocks_02_n
  normalFormat X Y Z
- physicalMap textures/kolonia/wet_rock_p
+ physicalMap textures/kolonia/coast_sand_rocks_02_p
+ heightMap textures/kolonia/coast_sand_rocks_02_h
+ depthScale 0.015
  }
 }
 
 textures/kolonia/wet_moss
 {
- qer_editorImage textures/kolonia/wet_moss_d
+ qer_editorImage textures/kolonia/coast_sand_rocks_02_d
  q3map_nonplanar
  q3map_shadeAngle 60
  {
- diffuseMap textures/kolonia/wet_moss_d
- normalMap textures/kolonia/strata_n
+ diffuseMap textures/kolonia/coast_sand_rocks_02_d
+ normalMap textures/kolonia/coast_sand_rocks_02_n
  normalFormat X Y Z
- physicalMap textures/kolonia/wet_moss_p
+ physicalMap textures/kolonia/coast_sand_rocks_02_p
+ heightMap textures/kolonia/coast_sand_rocks_02_h
+ depthScale 0.015
  }
 }
 
@@ -314,8 +319,9 @@ textures/kolonia/ship_light
 {
  qer_editorImage textures/kolonia/ship_light_d
  q3map_nonplanar
- q3map_shadeAngle 60
+ q3map_shadeAngle 1
  q3map_surfaceLight 650
+ q3map_lightSubdivide 32 // Distribute shadow samples along the light strip.
  q3map_lightImage textures/kolonia/ship_light_g
  {
   diffuseMap textures/kolonia/ship_light_d
@@ -346,7 +352,7 @@ textures/kolonia/ivory_planar
 {
  qer_editorImage textures/kolonia/ship_panel_d
 
- q3map_shadeAngle 55
+ q3map_shadeAngle 1 // Keep flat panels hard; preserve authored model normals.
  {
  diffuseMap textures/kolonia/ship_panel_d
  normalMap textures/kolonia/ship_panel_n
@@ -359,13 +365,15 @@ textures/kolonia/ivory_planar
 // Structural joins retain the same PBR maps without cross-plane lightmap merging.
 textures/kolonia/wet_rock_planar
 {
- qer_editorImage textures/kolonia/wet_rock_d
+ qer_editorImage textures/kolonia/coast_sand_rocks_02_d
 
  q3map_shadeAngle 60
  {
- diffuseMap textures/kolonia/wet_rock_d
- normalMap textures/kolonia/strata_n
+ diffuseMap textures/kolonia/coast_sand_rocks_02_d
+ normalMap textures/kolonia/coast_sand_rocks_02_n
  normalFormat X Y Z
- physicalMap textures/kolonia/wet_rock_p
+ physicalMap textures/kolonia/coast_sand_rocks_02_p
+ heightMap textures/kolonia/coast_sand_rocks_02_h
+ depthScale 0.015
  }
 }
