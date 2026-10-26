@@ -1,0 +1,20 @@
+# Compiled maps, lighting, navigation, and packaged releases.
+/maps/*
+!/maps/*.map
+*.bsp
+*.navMesh
+*.dpk
+*.pk3
+*.prt
+*.lin
+*.srf
+*.log
+*.tmp
+
+# Editor backups and Python caches.
+*.bak
+*.autosave.map
+*.blend[0-9]
+*~
+__pycache__/
+*.pyc

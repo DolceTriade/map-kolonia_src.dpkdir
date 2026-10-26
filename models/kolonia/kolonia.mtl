@@ -1,0 +1,83 @@
+newmtl textures/kolonia/amber_norad
+Kd 1 1 1
+map_Kd textures/kolonia/amber_norad
+
+newmtl textures/kolonia/bio_norad
+Kd 1 1 1
+map_Kd textures/kolonia/bio_norad
+
+newmtl textures/kolonia/cool_norad
+Kd 1 1 1
+map_Kd textures/kolonia/cool_norad
+
+newmtl textures/kolonia/deck
+Kd 1 1 1
+map_Kd textures/kolonia/deck
+
+newmtl textures/kolonia/ivory
+Kd 1 1 1
+map_Kd textures/kolonia/ivory
+
+newmtl textures/kolonia/metal
+Kd 1 1 1
+map_Kd textures/kolonia/metal
+
+newmtl textures/kolonia/moss
+Kd 1 1 1
+map_Kd textures/kolonia/moss
+
+newmtl textures/kolonia/rock
+Kd 1 1 1
+map_Kd textures/kolonia/rock
+
+newmtl textures/kolonia/salvage
+Kd 1 1 1
+map_Kd textures/kolonia/salvage
+
+newmtl textures/kolonia/strata
+Kd 1 1 1
+map_Kd textures/kolonia/strata
+
+newmtl textures/kolonia/window
+Kd 1 1 1
+map_Kd textures/kolonia/window
+
+newmtl textures/kolonia/wet_rock
+Kd 1 1 1
+map_Kd textures/kolonia/wet_rock
+
+newmtl textures/kolonia/wet_moss
+Kd 1 1 1
+map_Kd textures/kolonia/wet_moss
+
+newmtl textures/kolonia/bridge_display
+Kd 1 1 1
+map_Kd textures/kolonia/bridge_display
+
+newmtl textures/kolonia/medical_display
+Kd 1 1 1
+map_Kd textures/kolonia/medical_display
+
+newmtl textures/kolonia/status_pulse
+Kd 1 1 1
+map_Kd textures/kolonia/status_pulse
+
+newmtl textures/kolonia/sign_amber
+Kd 1 1 1
+map_Kd textures/kolonia/sign_amber
+
+newmtl textures/kolonia/foliage
+Kd 1 1 1
+map_Kd textures/kolonia/foliage
+
+newmtl textures/kolonia/bark
+Kd 1 1 1
+map_Kd textures/kolonia/bark
+
+newmtl textures/kolonia/ship_light
+Kd 1 1 1
+map_Kd textures/kolonia/ship_light
+
+newmtl textures/kolonia/ship_light_norad
+Kd 1 1 1
+map_Kd textures/kolonia/ship_light_norad
