@@ -71,7 +71,7 @@ for room in rooms:
     if skin=='Rock_skin':
      # Keep the existing scan as the main rock; moss uses the aerial scan.
      if 'Moss_' in g['name']:material='textures/kolonia/cave_aerial'
-     elif math.sin(center[0]/210+room['entity'])*math.cos(center[1]/230+center[2]/160)>.38:material='textures/kolonia/cave_fracture'
+     elif g['name'].startswith('Low_wet_cave_vault'):material='textures/kolonia/cave_fracture'
      else:material='textures/kolonia/cave_base'
     if material not in mats:mats.append(material)
     for vi,ti,ni in face:
@@ -111,3 +111,5 @@ for cell in json.loads((D/'old-clips.json').read_text()):
   row=np.array(row);raw=row[:3]@inv;L=np.linalg.norm(raw);n=raw/L;d=(row[3]-row[:3]@center)/L+n@destination;planes.append([*n,d])
  newclips.append({'brush':cell['brush'],'model':cell['model'],'planes':planes})
 (W/'new-clips.json').write_text(json.dumps(newclips));bpy.ops.wm.save_as_mainfile(filepath=str(D/'caves.blend'),compress=True);print('ALL CAVE ART COMPLETE',flush=True)
+
+# After regeneration, run Blender with tools/unwrap_cave_rock.py for the final rock UVs.

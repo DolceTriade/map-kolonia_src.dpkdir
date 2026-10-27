@@ -1,0 +1,217 @@
+{
+  "bsp_compile": "Passed leak test; no warnings or errors; zero degenerate edges.",
+  "lighting_test": "Direct lighting test passed before final collision-only regeneration; release lighting and navigation still require rebuild.",
+  "lighting_and_uv": {
+    "computer_panels": [
+      {
+        "origin": "-2308 -1440 64",
+        "covered_panel_samples": 9,
+        "median_diffuse": 60.0,
+        "median_baked": 46.666666666666664
+      },
+      {
+        "origin": "-2492 -1436 64",
+        "covered_panel_samples": 9,
+        "median_diffuse": 60.0,
+        "median_baked": 42.0
+      },
+      {
+        "origin": "-2652 -1260 64",
+        "covered_panel_samples": 9,
+        "median_diffuse": 59.666666666666664,
+        "median_baked": 34.0
+      },
+      {
+        "origin": "-2652 -1064 64",
+        "covered_panel_samples": 9,
+        "median_diffuse": 59.666666666666664,
+        "median_baked": 44.666666666666664
+      }
+    ],
+    "northern_vault_baked_triangles": 24,
+    "northern_vault_median_light": 35.833333333333336,
+    "room_geometry_preserved": [
+      "cavern_1_organic.obj",
+      "cavern_2_organic.obj",
+      "nursery_lining_organic.obj",
+      "cavern_0_organic.obj",
+      "impact_lining_organic.obj",
+      "cliff_lining_organic.obj",
+      "cavern_3_organic.obj",
+      "grotto_lining_organic.obj",
+      "cavern_4_organic.obj"
+    ],
+    "rock_uv": [
+      {
+        "model": "cavern_0_organic.obj",
+        "faces": 7226,
+        "islands": 391,
+        "distorted_faces": 0,
+        "worst_anisotropy": 1.74397829548342
+      },
+      {
+        "model": "cavern_1_organic.obj",
+        "faces": 11876,
+        "islands": 776,
+        "distorted_faces": 0,
+        "worst_anisotropy": 1.8539423946181142
+      },
+      {
+        "model": "cavern_2_organic.obj",
+        "faces": 12314,
+        "islands": 795,
+        "distorted_faces": 0,
+        "worst_anisotropy": 1.9062391784485972
+      },
+      {
+        "model": "cavern_3_organic.obj",
+        "faces": 7226,
+        "islands": 432,
+        "distorted_faces": 0,
+        "worst_anisotropy": 1.761710835881061
+      },
+      {
+        "model": "cavern_4_organic.obj",
+        "faces": 10206,
+        "islands": 538,
+        "distorted_faces": 0,
+        "worst_anisotropy": 1.7522836491426323
+      },
+      {
+        "model": "cliff_lining_organic.obj",
+        "faces": 13190,
+        "islands": 1205,
+        "distorted_faces": 0,
+        "worst_anisotropy": 1.8140940749035441
+      },
+      {
+        "model": "grotto_lining_organic.obj",
+        "faces": 9046,
+        "islands": 553,
+        "distorted_faces": 0,
+        "worst_anisotropy": 1.8634636205542183
+      },
+      {
+        "model": "impact_lining_organic.obj",
+        "faces": 12894,
+        "islands": 985,
+        "distorted_faces": 0,
+        "worst_anisotropy": 1.8801361805339376
+      },
+      {
+        "model": "nursery_lining_organic.obj",
+        "faces": 14084,
+        "islands": 996,
+        "distorted_faces": 0,
+        "worst_anisotropy": 1.9452626001808047
+      }
+    ]
+  },
+  "collision": {
+    "computers": [
+      {
+        "origin": "-2308 -1440 64",
+        "covered_surface_samples": 1626
+      },
+      {
+        "origin": "-2492 -1436 64",
+        "covered_surface_samples": 1626
+      },
+      {
+        "origin": "-2652 -1260 64",
+        "covered_surface_samples": 1626
+      },
+      {
+        "origin": "-2652 -1064 64",
+        "covered_surface_samples": 1626
+      }
+    ],
+    "existing_model_placements_preserved": true
+  },
+  "passage_clearance": [
+    {
+      "passage": "northern_grotto",
+      "body": "human_clearance",
+      "connected": true,
+      "free_samples": 221
+    },
+    {
+      "passage": "northern_grotto",
+      "body": "large_alien_clearance",
+      "connected": true,
+      "free_samples": 184
+    },
+    {
+      "passage": "grotto_root",
+      "body": "human_clearance",
+      "connected": true,
+      "free_samples": 187
+    },
+    {
+      "passage": "grotto_root",
+      "body": "large_alien_clearance",
+      "connected": true,
+      "free_samples": 153
+    },
+    {
+      "passage": "east_gallery",
+      "body": "human_clearance",
+      "connected": true,
+      "free_samples": 407
+    },
+    {
+      "passage": "east_gallery",
+      "body": "large_alien_clearance",
+      "connected": true,
+      "free_samples": 333
+    },
+    {
+      "passage": "lower_east",
+      "body": "human_clearance",
+      "connected": true,
+      "free_samples": 396
+    },
+    {
+      "passage": "lower_east",
+      "body": "large_alien_clearance",
+      "connected": true,
+      "free_samples": 329
+    },
+    {
+      "passage": "crash_root",
+      "body": "human_clearance",
+      "connected": true,
+      "free_samples": 176
+    },
+    {
+      "passage": "crash_root",
+      "body": "large_alien_clearance",
+      "connected": true,
+      "free_samples": 144
+    },
+    {
+      "passage": "impact_nursery_s",
+      "body": "human_clearance",
+      "connected": true,
+      "free_samples": 246
+    },
+    {
+      "passage": "impact_nursery_s",
+      "body": "large_alien_clearance",
+      "connected": true,
+      "free_samples": 182
+    },
+    {
+      "passage": "nursery_north",
+      "body": "human_clearance",
+      "connected": true,
+      "free_samples": 287
+    },
+    {
+      "passage": "nursery_north",
+      "body": "large_alien_clearance",
+      "connected": true,
+      "free_samples": 232
+    }
+  ]
+}

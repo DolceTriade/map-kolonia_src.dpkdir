@@ -476,3 +476,16 @@ textures/kolonia/jj_supercomputer
  glowMap textures/kolonia/jj_supercomputer_g
  }
 }
+
+// Opaque cabinet rear, cropped from Jungle Jim's authored metal casing maps.
+textures/kolonia/jj_cabinet_back
+{
+ qer_editorImage textures/kolonia/jj_cabinet_back_d
+ q3map_shadeAngle 1
+ {
+ diffuseMap textures/kolonia/jj_cabinet_back_d
+ normalMap textures/kolonia/jj_cabinet_back_n
+ normalFormat X Y Z
+ physicalMap textures/kolonia/jj_cabinet_back_p
+ }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "model": "impact_lining_organic.obj",
+    "changed_material_faces": 4055,
+    "materials": {
+      "textures/kolonia/cave_base": 8171,
+      "textures/kolonia/cave_aerial": 2354,
+      "textures/kolonia/cave_fracture": 2369
+    }
+  },
+  {
+    "model": "nursery_lining_organic.obj",
+    "changed_material_faces": 4470,
+    "materials": {
+      "textures/kolonia/cave_base": 9160,
+      "textures/kolonia/cave_aerial": 1764,
+      "textures/kolonia/cave_fracture": 3160
+    }
+  },
+  {
+    "model": "grotto_lining_organic.obj",
+    "changed_material_faces": 3106,
+    "materials": {
+      "textures/kolonia/cave_base": 5460,
+      "textures/kolonia/cave_aerial": 1635,
+      "textures/kolonia/cave_fracture": 1951
+    }
+  },
+  {
+    "model": "cliff_lining_organic.obj",
+    "changed_material_faces": 1937,
+    "materials": {
+      "textures/kolonia/cave_base": 10576,
+      "textures/kolonia/cave_aerial": 2614
+    }
+  },
+  {
+    "model": "cavern_0_organic.obj",
+    "changed_material_faces": 2684,
+    "materials": {
+      "textures/kolonia/cave_base": 4519,
+      "textures/kolonia/cave_aerial": 854,
+      "textures/kolonia/cave_fracture": 1853
+    }
+  },
+  {
+    "model": "cavern_1_organic.obj",
+    "changed_material_faces": 3763,
+    "materials": {
+      "textures/kolonia/cave_base": 7933,
+      "textures/kolonia/cave_aerial": 1773,
+      "textures/kolonia/cave_fracture": 2170
+    }
+  },
+  {
+    "model": "cavern_2_organic.obj",
+    "changed_material_faces": 4288,
+    "materials": {
+      "textures/kolonia/cave_base": 8119,
+      "textures/kolonia/cave_aerial": 1583,
+      "textures/kolonia/cave_fracture": 2612
+    }
+  },
+  {
+    "model": "cavern_3_organic.obj",
+    "changed_material_faces": 2182,
+    "materials": {
+      "textures/kolonia/cave_base": 4611,
+      "textures/kolonia/cave_aerial": 780,
+      "textures/kolonia/cave_fracture": 1835
+    }
+  },
+  {
+    "model": "cavern_4_organic.obj",
+    "changed_material_faces": 3086,
+    "materials": {
+      "textures/kolonia/cave_base": 6463,
+      "textures/kolonia/cave_aerial": 1660,
+      "textures/kolonia/cave_fracture": 2083
+    }
+  }
+]

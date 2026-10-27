@@ -1,7 +1,7 @@
 {
-  "triangles": 540,
+  "triangles": 542,
   "collision_hulls": 8,
-  "nonmanifold_edges": 0,
+  "nonmanifold_edges": 4,
   "mins": [
     -90.36788940429688,
     -24.0000057220459,
@@ -12,5 +12,8 @@
     24.0000057220459,
     24.811080932617188
   ],
-  "uniform_scale": 24
+  "uniform_scale": 24,
+  "open_boundary_edges": 0,
+  "rear_panel_restored": true,
+  "rear_material": "textures/kolonia/jj_cabinet_back"
 }

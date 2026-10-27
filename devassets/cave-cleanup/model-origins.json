@@ -1,0 +1,47 @@
+{
+  "impact_lining_organic.obj": [
+    1152.0,
+    0.0,
+    64.0
+  ],
+  "nursery_lining_organic.obj": [
+    2944.0,
+    0.0,
+    64.0
+  ],
+  "grotto_lining_organic.obj": [
+    1152.0,
+    1152.0,
+    64.0
+  ],
+  "cliff_lining_organic.obj": [
+    1152.0,
+    -1280.0,
+    64.0
+  ],
+  "cavern_0_organic.obj": [
+    2304.0,
+    1152.0,
+    64.0
+  ],
+  "cavern_1_organic.obj": [
+    3300.0,
+    1152.0,
+    64.0
+  ],
+  "cavern_2_organic.obj": [
+    4224.0,
+    0.0,
+    64.0
+  ],
+  "cavern_3_organic.obj": [
+    2560.0,
+    -1280.0,
+    64.0
+  ],
+  "cavern_4_organic.obj": [
+    3584.0,
+    -1320.0,
+    64.0
+  ]
+}

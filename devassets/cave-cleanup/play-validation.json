@@ -1,0 +1,86 @@
+[
+  {
+    "passage": "northern_grotto",
+    "body": "human_clearance",
+    "connected": true,
+    "free_samples": 221
+  },
+  {
+    "passage": "northern_grotto",
+    "body": "large_alien_clearance",
+    "connected": true,
+    "free_samples": 184
+  },
+  {
+    "passage": "grotto_root",
+    "body": "human_clearance",
+    "connected": true,
+    "free_samples": 187
+  },
+  {
+    "passage": "grotto_root",
+    "body": "large_alien_clearance",
+    "connected": true,
+    "free_samples": 153
+  },
+  {
+    "passage": "east_gallery",
+    "body": "human_clearance",
+    "connected": true,
+    "free_samples": 407
+  },
+  {
+    "passage": "east_gallery",
+    "body": "large_alien_clearance",
+    "connected": true,
+    "free_samples": 333
+  },
+  {
+    "passage": "lower_east",
+    "body": "human_clearance",
+    "connected": true,
+    "free_samples": 396
+  },
+  {
+    "passage": "lower_east",
+    "body": "large_alien_clearance",
+    "connected": true,
+    "free_samples": 329
+  },
+  {
+    "passage": "crash_root",
+    "body": "human_clearance",
+    "connected": true,
+    "free_samples": 176
+  },
+  {
+    "passage": "crash_root",
+    "body": "large_alien_clearance",
+    "connected": true,
+    "free_samples": 144
+  },
+  {
+    "passage": "impact_nursery_s",
+    "body": "human_clearance",
+    "connected": true,
+    "free_samples": 246
+  },
+  {
+    "passage": "impact_nursery_s",
+    "body": "large_alien_clearance",
+    "connected": true,
+    "free_samples": 182
+  },
+  {
+    "passage": "nursery_north",
+    "body": "human_clearance",
+    "connected": true,
+    "free_samples": 287
+  },
+  {
+    "passage": "nursery_north",
+    "body": "large_alien_clearance",
+    "connected": true,
+    "free_samples": 232
+  }
+]
