@@ -97,3 +97,11 @@ map_Kd textures/kolonia/cave_ground_d
 newmtl textures/kolonia/cave_base
 Kd 1 1 1
 map_Kd textures/kolonia/coast_sand_rocks_02_d
+
+newmtl textures/kolonia/cave_fungus_light
+Kd 1 1 1
+map_Kd textures/kolonia/bio_d
+
+newmtl textures/common/caulk
+Kd 1 1 1
+map_Kd textures/common_src/caulk_p

@@ -1,0 +1,51 @@
+[
+  {
+    "name": "northern_grotto",
+    "model": "passage_northern_grotto.obj",
+    "triangles": 1312,
+    "lights": 4,
+    "quads": 488
+  },
+  {
+    "name": "grotto_root",
+    "model": "passage_grotto_root.obj",
+    "triangles": 968,
+    "lights": 4,
+    "quads": 364
+  },
+  {
+    "name": "east_gallery",
+    "model": "passage_east_gallery.obj",
+    "triangles": 1824,
+    "lights": 8,
+    "quads": 662
+  },
+  {
+    "name": "lower_east",
+    "model": "passage_lower_east.obj",
+    "triangles": 1812,
+    "lights": 7,
+    "quads": 670
+  },
+  {
+    "name": "crash_root",
+    "model": "passage_crash_root.obj",
+    "triangles": 1100,
+    "lights": 3,
+    "quads": 434
+  },
+  {
+    "name": "impact_nursery_s",
+    "model": "passage_impact_nursery_s.obj",
+    "triangles": 4448,
+    "lights": 8,
+    "quads": 1816
+  },
+  {
+    "name": "nursery_north",
+    "model": "passage_nursery_north.obj",
+    "triangles": 1888,
+    "lights": 6,
+    "quads": 738
+  }
+]

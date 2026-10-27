@@ -20,3 +20,5 @@ __pycache__/
 *.pyc
 
 /devassets/cave-renewal/build/
+
+/devassets/cave-passages/build/

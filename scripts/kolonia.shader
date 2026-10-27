@@ -429,3 +429,22 @@ textures/kolonia/cave_base
  depthScale 0.015
  }
 }
+
+// Mounted fungal brackets emit area light below the cave overhangs.
+textures/kolonia/cave_fungus_light
+{
+ qer_editorImage textures/kolonia/bio_d
+ q3map_shadeAngle 1
+ q3map_surfaceLight 1500
+ q3map_lightRGB 0.72 0.90 0.86
+ q3map_lightImage textures/kolonia/bio_d
+ q3map_lightSubdivide 32
+ q3map_backSplash 0 0
+ {
+ diffuseMap textures/kolonia/bio_d
+ normalMap textures/kolonia/bio_n
+ normalFormat X Y Z
+ specularMap textures/kolonia/bio_s
+ glowMap textures/kolonia/bio_d
+ }
+}

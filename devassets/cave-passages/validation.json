@@ -1,0 +1,240 @@
+{
+  "completed_comments": 8,
+  "new_passages": 7,
+  "test_bake": "Direct shader lighting tested; release lighting/nav rebuild required.",
+  "floor_cleanup": {
+    "floor_brushes_before": 1066,
+    "floor_brushes_after": 698,
+    "quad_floor_faces": 185,
+    "aligned_brush_faces": 1972,
+    "additional_overhangs_recessed": 1
+  },
+  "uv_and_clusters": {
+    "uv_vertices": 3365,
+    "max_uv_phase_error": 6.103515625e-05,
+    "uv_outliers": 0,
+    "clusters": [
+      {
+        "passage": "northern_grotto",
+        "valid_samples": 198,
+        "outside_samples": 0
+      },
+      {
+        "passage": "grotto_root",
+        "valid_samples": 165,
+        "outside_samples": 0
+      },
+      {
+        "passage": "east_gallery",
+        "valid_samples": 385,
+        "outside_samples": 0
+      },
+      {
+        "passage": "lower_east",
+        "valid_samples": 372,
+        "outside_samples": 0
+      },
+      {
+        "passage": "crash_root",
+        "valid_samples": 154,
+        "outside_samples": 0
+      },
+      {
+        "passage": "impact_nursery_s",
+        "valid_samples": 219,
+        "outside_samples": 0
+      },
+      {
+        "passage": "nursery_north",
+        "valid_samples": 268,
+        "outside_samples": 0
+      }
+    ]
+  },
+  "clearance": [
+    {
+      "passage": "northern_grotto",
+      "body": "human_clearance",
+      "connected": true,
+      "free_samples": 221
+    },
+    {
+      "passage": "northern_grotto",
+      "body": "large_alien_clearance",
+      "connected": true,
+      "free_samples": 184
+    },
+    {
+      "passage": "grotto_root",
+      "body": "human_clearance",
+      "connected": true,
+      "free_samples": 187
+    },
+    {
+      "passage": "grotto_root",
+      "body": "large_alien_clearance",
+      "connected": true,
+      "free_samples": 153
+    },
+    {
+      "passage": "east_gallery",
+      "body": "human_clearance",
+      "connected": true,
+      "free_samples": 407
+    },
+    {
+      "passage": "east_gallery",
+      "body": "large_alien_clearance",
+      "connected": true,
+      "free_samples": 333
+    },
+    {
+      "passage": "lower_east",
+      "body": "human_clearance",
+      "connected": true,
+      "free_samples": 396
+    },
+    {
+      "passage": "lower_east",
+      "body": "large_alien_clearance",
+      "connected": true,
+      "free_samples": 329
+    },
+    {
+      "passage": "crash_root",
+      "body": "human_clearance",
+      "connected": true,
+      "free_samples": 176
+    },
+    {
+      "passage": "crash_root",
+      "body": "large_alien_clearance",
+      "connected": true,
+      "free_samples": 144
+    },
+    {
+      "passage": "impact_nursery_s",
+      "body": "human_clearance",
+      "connected": true,
+      "free_samples": 246
+    },
+    {
+      "passage": "impact_nursery_s",
+      "body": "large_alien_clearance",
+      "connected": true,
+      "free_samples": 182
+    },
+    {
+      "passage": "nursery_north",
+      "body": "human_clearance",
+      "connected": true,
+      "free_samples": 287
+    },
+    {
+      "passage": "nursery_north",
+      "body": "large_alien_clearance",
+      "connected": true,
+      "free_samples": 232
+    }
+  ],
+  "roof_lighting": [
+    {
+      "passage": "northern_grotto",
+      "samples": 81,
+      "medians": [
+        30.333333333333332,
+        5.0,
+        28.88888888888889
+      ],
+      "black_percent": [
+        20.98765432098765,
+        49.382716049382715,
+        6.172839506172839
+      ]
+    },
+    {
+      "passage": "grotto_root",
+      "samples": 55,
+      "medians": [
+        34.0,
+        0.0,
+        33.111111111111114
+      ],
+      "black_percent": [
+        3.6363636363636362,
+        65.45454545454545,
+        0.0
+      ]
+    },
+    {
+      "passage": "east_gallery",
+      "samples": 113,
+      "medians": [
+        29.333333333333332,
+        0.0,
+        31.88888888888889
+      ],
+      "black_percent": [
+        3.5398230088495577,
+        62.83185840707964,
+        1.7699115044247788
+      ]
+    },
+    {
+      "passage": "lower_east",
+      "samples": 117,
+      "medians": [
+        26.333333333333332,
+        13.666666666666666,
+        29.22222222222222
+      ],
+      "black_percent": [
+        13.675213675213676,
+        45.2991452991453,
+        1.7094017094017095
+      ]
+    },
+    {
+      "passage": "crash_root",
+      "samples": 72,
+      "medians": [
+        32.0,
+        30.833333333333332,
+        28.444444444444443
+      ],
+      "black_percent": [
+        15.277777777777779,
+        37.5,
+        5.555555555555555
+      ]
+    },
+    {
+      "passage": "impact_nursery_s",
+      "samples": 241,
+      "medians": [
+        47.666666666666664,
+        35.0,
+        46.666666666666664
+      ],
+      "black_percent": [
+        2.4896265560165975,
+        31.535269709543567,
+        0.0
+      ]
+    },
+    {
+      "passage": "nursery_north",
+      "samples": 110,
+      "medians": [
+        29.333333333333332,
+        0.0,
+        31.0
+      ],
+      "black_percent": [
+        9.090909090909092,
+        54.54545454545454,
+        1.8181818181818181
+      ]
+    }
+  ]
+}

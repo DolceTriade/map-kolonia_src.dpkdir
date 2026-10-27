@@ -78,6 +78,15 @@ for room in rooms:
      p=changed[vi];key=tuple(p.round(6))
      if key not in lookup:lookup[key]=len(positions);positions.append(p)
      ids.append(lookup[key]);t=uv[ti].copy()
+     if material=='textures/kolonia/wet_moss':
+      # Original narrow moss bands now use the rock scan. Replace fitted,
+      # stretched strip UVs with the same world scale as surrounding brushes.
+      fp=changed[[q[0] for q in face]];fn=np.cross(fp[1]-fp[0],fp[2]-fp[0]);fn/=max(np.linalg.norm(fn),1e-9);wp=p+origin
+      if fn[2]>.65:st=[wp[1],wp[0]]
+      elif fn[2]<-.65:st=[wp[1],-wp[0]]
+      elif abs(fn[0])>=abs(fn[1]):st=[np.sign(fn[0])*wp[1],-wp[2]]
+      else:st=[-np.sign(fn[1])*wp[0],-wp[2]]
+      t=np.array([st[0],-st[1]])/1024 # Pico negates OBJ V on import.
      if material=='textures/kolonia/cave_fracture':
       # Tilt the layered scan to follow dipping rock rather than a brick grid.
       ang=.32;c=math.cos(ang);ss=math.sin(ang);t=np.array([c*t[0]-ss*t[1],ss*t[0]+c*t[1]])*2
