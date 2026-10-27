@@ -18,7 +18,6 @@ SCRATCH = {'.prt', '.lin', '.srf', '.bak', '.tmp', '.log', '.dpk', '.pk3', '.pyc
 AUTHORING = {'.map', '.obj', '.mtl', '.blend', '.psd', '.xcf', '.py', '.sh', '.ps1', '.bat'}
 EXCLUDED_DIRS = {'build', '__pycache__', 'tools', 'devassets'}
 # Both Quake and native OpenGL cubemap faces need lossless edges to avoid seams.
-# Height maps also stay lossless: block artifacts would alter the relief geometry.
 SKY_FACE_SUFFIXES = ('_bk', '_dn', '_ft', '_lf', '_rt', '_up',
                      '_px', '_nx', '_py', '_ny', '_pz', '_nz')
 
@@ -63,7 +62,7 @@ def convert_file(task):
     action = 'copy'
     if ext in RASTER:
         lossless = ((rel.parts[0] == 'maps' and rel.name.startswith('lm_'))
-                    or rel.stem.lower().endswith(SKY_FACE_SUFFIXES + ('_nh', '_h', '_height', '_disp', '_displacement')))
+                    or rel.stem.lower().endswith(SKY_FACE_SUFFIXES))
         target = rel.with_suffix('.webp' if lossless else '.crn')
         action = 'lossless-webp' if lossless else 'crunch'
         dst = stage / target

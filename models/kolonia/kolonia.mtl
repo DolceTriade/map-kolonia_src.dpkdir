@@ -105,3 +105,11 @@ map_Kd textures/kolonia/bio_d
 newmtl textures/common/caulk
 Kd 1 1 1
 map_Kd textures/common_src/caulk_p
+
+newmtl textures/kolonia/jj_computers
+Kd 1 1 1
+map_Kd textures/kolonia/jj_computers_d
+
+newmtl textures/kolonia/jj_supercomputer
+Kd 1 1 1
+map_Kd textures/kolonia/jj_supercomputer_d

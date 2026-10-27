@@ -1,0 +1,46 @@
+{
+  "supercomputer_mesh": {
+    "triangles": 540,
+    "collision_hulls": 8,
+    "nonmanifold_edges": 0,
+    "mins": [
+      -90.36788940429688,
+      -24.0000057220459,
+      -64.0
+    ],
+    "maxs": [
+      90.36788940429688,
+      24.0000057220459,
+      24.811080932617188
+    ],
+    "uniform_scale": 24
+  },
+  "computer_collision": [
+    {
+      "entity": 18,
+      "covered_samples": 1623
+    },
+    {
+      "entity": 25,
+      "covered_samples": 1623
+    },
+    {
+      "entity": 35,
+      "covered_samples": 1623
+    }
+  ],
+  "widened_bunk_collision_cells": 69,
+  "normal_face_dot_min": 0.597029837786044,
+  "normal_face_dot_median": 1.0,
+  "height_mapping_directives": 0,
+  "cave_light_rgb": [
+    0.22,
+    0.65,
+    0.5
+  ],
+  "compiled_computer_triangles": {
+    "textures/kolonia/jj_computers": 1281,
+    "textures/kolonia/jj_supercomputer": 336
+  },
+  "bsp_compile": "No leaks, warnings or errors; zero degenerate T-junction edges."
+}

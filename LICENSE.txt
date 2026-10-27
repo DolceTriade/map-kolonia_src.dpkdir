@@ -9,7 +9,7 @@ Rest of the map is CC BY SA
 
 Coast Sand Rocks 02 — Rob Tuytel (Poly Haven)
 https://polyhaven.com/a/coast_sand_rocks_02
-Diffuse, OpenGL normal, AO/Roughness/Metallic, and displacement maps (2K), CC0.
+Diffuse, OpenGL normal, and AO/Roughness/Metallic maps (2K), CC0.
 https://polyhaven.com/license
 
 Rock Wall 10 — Amal Kumar (Poly Haven), CC0.
@@ -17,3 +17,10 @@ https://polyhaven.com/a/rock_wall_10
 Aerial Rocks 01 — Rob Tuytel (Poly Haven), CC0.
 https://polyhaven.com/a/aerial_rocks_01
 Diffuse, OpenGL normal, and AO/Roughness/Metallic maps (2K).
+
+Sci-fi Supercomputer — Jungle Jim (@jungle_jim), CC BY 4.0.
+https://sketchfab.com/3d-models/sci-fi-supercomputer-9464e880c35e4fd29c0cdb6fefe5ebba
+https://creativecommons.org/licenses/by/4.0/
+Adapted for Kolonia: scaled, an internal duplicate surface removed, textures resized to 2K,
+normal vectors renormalized, ARM maps packed, emission maps combined, and OBJ converted.
+Original work is not endorsed by its creator.

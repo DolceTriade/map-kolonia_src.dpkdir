@@ -47,8 +47,8 @@ textures/kolonia/rock
   normalMap textures/kolonia/strata_n
   normalFormat X Y Z
   physicalMap textures/kolonia/strata_p
-  heightMap textures/kolonia/strata_h
-  depthScale 0.018
+
+
  }
 }
 
@@ -71,7 +71,7 @@ textures/kolonia/bio
  q3map_shadeAngle 60
  qer_editorImage textures/kolonia/bio_d
 	q3map_surfaceLight 850
- q3map_lightRGB 0.72 0.90 0.86
+ q3map_lightRGB 0.22 0.65 0.50
 	q3map_lightImage textures/kolonia/bio_d
 	{
 		diffuseMap textures/kolonia/bio_d
@@ -163,8 +163,8 @@ textures/kolonia/strata
   normalMap textures/kolonia/strata_n
   normalFormat X Y Z
   physicalMap textures/kolonia/strata_p
-  heightMap textures/kolonia/strata_h
-  depthScale 0.018
+
+
  }
 }
 
@@ -220,8 +220,8 @@ textures/kolonia/wet_rock
  normalMap textures/kolonia/coast_sand_rocks_02_n
  normalFormat X Y Z
  physicalMap textures/kolonia/coast_sand_rocks_02_p
- heightMap textures/kolonia/coast_sand_rocks_02_h
- depthScale 0.015
+
+
  }
 }
 
@@ -235,8 +235,8 @@ textures/kolonia/wet_moss
  normalMap textures/kolonia/coast_sand_rocks_02_n
  normalFormat X Y Z
  physicalMap textures/kolonia/coast_sand_rocks_02_p
- heightMap textures/kolonia/coast_sand_rocks_02_h
- depthScale 0.015
+
+
  }
 }
 
@@ -372,8 +372,8 @@ textures/kolonia/wet_rock_planar
  normalMap textures/kolonia/coast_sand_rocks_02_n
  normalFormat X Y Z
  physicalMap textures/kolonia/coast_sand_rocks_02_p
- heightMap textures/kolonia/coast_sand_rocks_02_h
- depthScale 0.015
+
+
  }
 }
 
@@ -425,8 +425,8 @@ textures/kolonia/cave_base
  normalMap textures/kolonia/coast_sand_rocks_02_n
  normalFormat X Y Z
  physicalMap textures/kolonia/coast_sand_rocks_02_p
- heightMap textures/kolonia/coast_sand_rocks_02_h
- depthScale 0.015
+
+
  }
 }
 
@@ -436,7 +436,7 @@ textures/kolonia/cave_fungus_light
  qer_editorImage textures/kolonia/bio_d
  q3map_shadeAngle 1
  q3map_surfaceLight 1500
- q3map_lightRGB 0.72 0.90 0.86
+ q3map_lightRGB 0.22 0.65 0.50
  q3map_lightImage textures/kolonia/bio_d
  q3map_lightSubdivide 32
  q3map_backSplash 0 0
@@ -446,5 +446,33 @@ textures/kolonia/cave_fungus_light
  normalFormat X Y Z
  specularMap textures/kolonia/bio_s
  glowMap textures/kolonia/bio_d
+ }
+}
+
+// Sci-fi Supercomputer by Jungle Jim, CC BY 4.0; adapted for Kolonia.
+textures/kolonia/jj_computers
+{
+ qer_editorImage textures/kolonia/jj_computers_d
+ q3map_shadeAngle 1
+ {
+ diffuseMap textures/kolonia/jj_computers_d
+ normalMap textures/kolonia/jj_computers_n
+ normalFormat X Y Z
+ physicalMap textures/kolonia/jj_computers_p
+ glowMap textures/kolonia/jj_computers_g
+ }
+}
+
+// Sci-fi Supercomputer by Jungle Jim, CC BY 4.0; adapted for Kolonia.
+textures/kolonia/jj_supercomputer
+{
+ qer_editorImage textures/kolonia/jj_supercomputer_d
+ q3map_shadeAngle 1
+ {
+ diffuseMap textures/kolonia/jj_supercomputer_d
+ normalMap textures/kolonia/jj_supercomputer_n
+ normalFormat X Y Z
+ physicalMap textures/kolonia/jj_supercomputer_p
+ glowMap textures/kolonia/jj_supercomputer_g
  }
 }
