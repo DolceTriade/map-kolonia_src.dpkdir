@@ -1,0 +1,65 @@
+[
+  {
+    "model": "models/kolonia/impact_lining.obj",
+    "vertices": 6449,
+    "uncovered_vertices": 0,
+    "examples": [],
+    "uncovered": []
+  },
+  {
+    "model": "models/kolonia/nursery_lining.obj",
+    "vertices": 7044,
+    "uncovered_vertices": 0,
+    "examples": [],
+    "uncovered": []
+  },
+  {
+    "model": "models/kolonia/grotto_lining.obj",
+    "vertices": 4525,
+    "uncovered_vertices": 0,
+    "examples": [],
+    "uncovered": []
+  },
+  {
+    "model": "models/kolonia/cliff_lining.obj",
+    "vertices": 6595,
+    "uncovered_vertices": 0,
+    "examples": [],
+    "uncovered": []
+  },
+  {
+    "model": "models/kolonia/cavern_0.obj",
+    "vertices": 3615,
+    "uncovered_vertices": 0,
+    "examples": [],
+    "uncovered": []
+  },
+  {
+    "model": "models/kolonia/cavern_1.obj",
+    "vertices": 5940,
+    "uncovered_vertices": 0,
+    "examples": [],
+    "uncovered": []
+  },
+  {
+    "model": "models/kolonia/cavern_2.obj",
+    "vertices": 6159,
+    "uncovered_vertices": 0,
+    "examples": [],
+    "uncovered": []
+  },
+  {
+    "model": "models/kolonia/cavern_3.obj",
+    "vertices": 3615,
+    "uncovered_vertices": 0,
+    "examples": [],
+    "uncovered": []
+  },
+  {
+    "model": "models/kolonia/cavern_4.obj",
+    "vertices": 5105,
+    "uncovered_vertices": 0,
+    "examples": [],
+    "uncovered": []
+  }
+]

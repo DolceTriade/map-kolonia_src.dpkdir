@@ -1,0 +1,10 @@
+{
+  "cave_models": 9,
+  "original_triangles": 249960,
+  "new_triangles": 143710,
+  "leak_free": true,
+  "geometry_warnings": 0,
+  "suspect_lightmap_axis_triangles": 0,
+  "uncovered_tested_skin_vertices": 0,
+  "release_lighting_required": true
+}

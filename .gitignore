@@ -18,3 +18,5 @@
 *~
 __pycache__/
 *.pyc
+
+/devassets/cave-renewal/build/

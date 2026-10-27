@@ -1,0 +1,38 @@
+[
+  {
+    "model": "models/kolonia/impact_lining.obj",
+    "patches": 358
+  },
+  {
+    "model": "models/kolonia/nursery_lining.obj",
+    "patches": 165
+  },
+  {
+    "model": "models/kolonia/grotto_lining.obj",
+    "patches": 435
+  },
+  {
+    "model": "models/kolonia/cliff_lining.obj",
+    "patches": 51
+  },
+  {
+    "model": "models/kolonia/cavern_0.obj",
+    "patches": 220
+  },
+  {
+    "model": "models/kolonia/cavern_1.obj",
+    "patches": 182
+  },
+  {
+    "model": "models/kolonia/cavern_2.obj",
+    "patches": 145
+  },
+  {
+    "model": "models/kolonia/cavern_3.obj",
+    "patches": 109
+  },
+  {
+    "model": "models/kolonia/cavern_4.obj",
+    "patches": 318
+  }
+]

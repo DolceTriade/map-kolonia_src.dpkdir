@@ -1,0 +1,47 @@
+[
+  {
+    "model": "impact_lining.obj",
+    "before_triangles": 31936,
+    "after_triangles": 17966
+  },
+  {
+    "model": "nursery_lining.obj",
+    "before_triangles": 34416,
+    "after_triangles": 19156
+  },
+  {
+    "model": "grotto_lining.obj",
+    "before_triangles": 23920,
+    "after_triangles": 14118
+  },
+  {
+    "model": "cliff_lining.obj",
+    "before_triangles": 32552,
+    "after_triangles": 18262
+  },
+  {
+    "model": "cavern_0.obj",
+    "before_triangles": 20128,
+    "after_triangles": 12298
+  },
+  {
+    "model": "cavern_1.obj",
+    "before_triangles": 29816,
+    "after_triangles": 16948
+  },
+  {
+    "model": "cavern_2.obj",
+    "before_triangles": 30728,
+    "after_triangles": 17386
+  },
+  {
+    "model": "cavern_3.obj",
+    "before_triangles": 20128,
+    "after_triangles": 12298
+  },
+  {
+    "model": "cavern_4.obj",
+    "before_triangles": 26336,
+    "after_triangles": 15278
+  }
+]

@@ -71,7 +71,7 @@ textures/kolonia/bio
  q3map_shadeAngle 60
  qer_editorImage textures/kolonia/bio_d
 	q3map_surfaceLight 850
- q3map_lightRGB 0.90 0.95 1.00
+ q3map_lightRGB 0.72 0.90 0.86
 	q3map_lightImage textures/kolonia/bio_d
 	{
 		diffuseMap textures/kolonia/bio_d
@@ -214,8 +214,7 @@ textures/kolonia/cool_norad
 textures/kolonia/wet_rock
 {
  qer_editorImage textures/kolonia/coast_sand_rocks_02_d
- q3map_nonplanar
- q3map_shadeAngle 60
+ q3map_shadeAngle 1 // Preserve model normals; keep lightmap projection planar.
  {
  diffuseMap textures/kolonia/coast_sand_rocks_02_d
  normalMap textures/kolonia/coast_sand_rocks_02_n
@@ -368,6 +367,59 @@ textures/kolonia/wet_rock_planar
  qer_editorImage textures/kolonia/coast_sand_rocks_02_d
 
  q3map_shadeAngle 60
+ {
+ diffuseMap textures/kolonia/coast_sand_rocks_02_d
+ normalMap textures/kolonia/coast_sand_rocks_02_n
+ normalFormat X Y Z
+ physicalMap textures/kolonia/coast_sand_rocks_02_p
+ heightMap textures/kolonia/coast_sand_rocks_02_h
+ depthScale 0.015
+ }
+}
+
+// Cave renewal: CC0 Poly Haven scans, OpenGL tangent normals and ARM data.
+textures/kolonia/cave_fracture
+{
+ qer_editorImage textures/kolonia/rock_wall_10_d
+ q3map_shadeAngle 1
+ {
+ diffuseMap textures/kolonia/rock_wall_10_d
+ normalMap textures/kolonia/rock_wall_10_n
+ normalFormat X Y Z
+ physicalMap textures/kolonia/rock_wall_10_p
+ }
+}
+
+// Cave renewal: CC0 Poly Haven scans, OpenGL tangent normals and ARM data.
+textures/kolonia/cave_aerial
+{
+ qer_editorImage textures/kolonia/cave_aerial_d
+ q3map_shadeAngle 1
+ {
+ diffuseMap textures/kolonia/cave_aerial_d
+ normalMap textures/kolonia/aerial_rocks_01_n
+ normalFormat X Y Z
+ physicalMap textures/kolonia/aerial_rocks_01_p
+ }
+}
+
+// Cave renewal: CC0 Poly Haven scans, OpenGL tangent normals and ARM data.
+textures/kolonia/cave_ground
+{
+ qer_editorImage textures/kolonia/cave_ground_d
+ q3map_shadeAngle 1
+ {
+ diffuseMap textures/kolonia/cave_ground_d
+ normalMap textures/kolonia/cave_ground_n
+ normalFormat X Y Z
+ physicalMap textures/kolonia/cave_ground_p
+ }
+}
+
+textures/kolonia/cave_base
+{
+ qer_editorImage textures/kolonia/coast_sand_rocks_02_d
+ q3map_shadeAngle 1
  {
  diffuseMap textures/kolonia/coast_sand_rocks_02_d
  normalMap textures/kolonia/coast_sand_rocks_02_n

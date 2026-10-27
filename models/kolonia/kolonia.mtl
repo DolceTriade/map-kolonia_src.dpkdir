@@ -81,3 +81,19 @@ map_Kd textures/kolonia/ship_light
 newmtl textures/kolonia/ship_light_norad
 Kd 1 1 1
 map_Kd textures/kolonia/ship_light_norad
+
+newmtl textures/kolonia/cave_fracture
+Kd 1 1 1
+map_Kd textures/kolonia/rock_wall_10_d
+
+newmtl textures/kolonia/cave_aerial
+Kd 1 1 1
+map_Kd textures/kolonia/cave_aerial_d
+
+newmtl textures/kolonia/cave_ground
+Kd 1 1 1
+map_Kd textures/kolonia/cave_ground_d
+
+newmtl textures/kolonia/cave_base
+Kd 1 1 1
+map_Kd textures/kolonia/coast_sand_rocks_02_d

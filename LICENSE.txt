@@ -11,3 +11,9 @@ Coast Sand Rocks 02 — Rob Tuytel (Poly Haven)
 https://polyhaven.com/a/coast_sand_rocks_02
 Diffuse, OpenGL normal, AO/Roughness/Metallic, and displacement maps (2K), CC0.
 https://polyhaven.com/license
+
+Rock Wall 10 — Amal Kumar (Poly Haven), CC0.
+https://polyhaven.com/a/rock_wall_10
+Aerial Rocks 01 — Rob Tuytel (Poly Haven), CC0.
+https://polyhaven.com/a/aerial_rocks_01
+Diffuse, OpenGL normal, and AO/Roughness/Metallic maps (2K).
