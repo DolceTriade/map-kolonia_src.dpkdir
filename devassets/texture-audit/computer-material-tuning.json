@@ -1,0 +1,17 @@
+[
+  {
+    "material": "jj_computers",
+    "roughness_floor": 0.45098039215686275,
+    "changed_pixels": 3543216
+  },
+  {
+    "material": "jj_supercomputer",
+    "roughness_floor": 0.45098039215686275,
+    "changed_pixels": 4123639
+  },
+  {
+    "material": "jj_cabinet_back",
+    "roughness_floor": 0.45098039215686275,
+    "changed_pixels": 520702
+  }
+]

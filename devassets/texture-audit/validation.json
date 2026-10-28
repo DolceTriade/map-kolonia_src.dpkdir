@@ -1,0 +1,35 @@
+{
+  "renderer": "/mnt/media/code/unv-master/build/daemon",
+  "gamma": 2,
+  "global_normal_scale": 0.55,
+  "view_position": [
+    -2380,
+    -1190,
+    100
+  ],
+  "view_angles": [
+    -90,
+    0
+  ],
+  "comparison": "Same compiled map and lighting; isolated baseline uses pre-tuning shader and ORM maps. After uses current shader and ORM maps.",
+  "package_conversion": [
+    {
+      "source": "textures/kolonia/jj_cabinet_back_p.png",
+      "packaged": "textures/kolonia/jj_cabinet_back_p.crn",
+      "action": "crunch"
+    },
+    {
+      "source": "textures/kolonia/jj_cabinet_back_n.png",
+      "packaged": "textures/kolonia/jj_cabinet_back_n.crn",
+      "action": "crunch-dxn"
+    }
+  ],
+  "geometry_changed": false,
+  "lighting_changed": false,
+  "seam_repairs_applied": false,
+  "no_missing_shader_images": true,
+  "rendered_materials": 33,
+  "referenced_images": 65,
+  "package_conversion_completed": true,
+  "map_modified": false
+}

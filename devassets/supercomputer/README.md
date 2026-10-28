@@ -31,3 +31,9 @@ After moving computer instances, save the map and run from the package root:
 Then reload the map in NetRadiant. This replaces only generated computer
 collision, using eight fitted common/fullclip pieces per instance. The cleanup
 retains all four current placements and generates 32 hulls.
+
+Material tuning (2026-10-27): the three computer materials use normal strength
+0.35 and ORM roughness >= 115/255. This avoids the original mirror-zero-roughness
+metal patches and reduces the exaggerated casing bumps. Base colors, metalness,
+screens and emission are retained. The source Blender materials match.
+See ../texture-audit/ for the audit and compiled-normal comparison.

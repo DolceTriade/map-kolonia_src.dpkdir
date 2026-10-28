@@ -37,17 +37,21 @@ def available_cpus():
         return os.cpu_count() or 1
 
 
-def shader_normal_maps(source):
-    """Collect simple normalMap paths; naming conventions remain a fallback."""
+def shader_map_paths(source, keyword):
+    """Collect simple material map paths; naming conventions remain a fallback."""
     paths = set()
     for shader in (source / 'scripts').rglob('*.shader'):
         text = re.sub(r'/\*.*?\*/|//[^\n]*', '', shader.read_text(), flags=re.S)
-        for match in re.finditer(r'(?im)^\s*normalMap\s+([^\s{}]+)', text):
+        for match in re.finditer(rf'(?im)^\s*{keyword}\s+([^\s{{}}]+)', text):
             path = Path(match[1].strip('"'))
             if path.suffix.lower() in PRIORITY:
                 path = path.with_suffix('')
             paths.add(path.as_posix().lower())
     return paths
+
+
+def shader_normal_maps(source):
+    return shader_map_paths(source, "normalMap")
 
 
 def is_normal_map(rel, shader_paths):
@@ -56,7 +60,7 @@ def is_normal_map(rel, shader_paths):
 
 
 def convert_file(task):
-    rel, path, stage, temporary, crunch, helpers, keep_sources, normal_map = task
+    rel, path, stage, temporary, crunch, helpers, keep_sources, normal_map, physical_map = task
     ext = rel.suffix.lower()
     target = rel
     action = 'copy'
@@ -83,6 +87,9 @@ def convert_file(task):
                             cmd += ['-dxn', '-gamma', '1.0', '-renormalize', '-rtopmip']
                             if rel.parts[0].lower() == 'textures':
                                 cmd += ['-wrap']
+                        if physical_map and not normal_map:
+                            # ORM channels are linear masks, never sRGB colors.
+                            cmd += ['-gamma', '1.0']
                         cmd += ['-quality', '255', '-out', str(dst)]
                         result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
                         if result.returncode or not dst.is_file() or not dst.stat().st_size:
@@ -130,6 +137,7 @@ def main():
     if output.exists():
         fail(f'Refusing to overwrite {output}; use a new version or remove it yourself.')
     normal_maps = shader_normal_maps(source)
+    physical_maps = shader_map_paths(source, "physicalMap")
     files = {}
     for path in sorted(source.rglob('*')):
         rel = path.relative_to(source)
@@ -176,7 +184,7 @@ def main():
         helpers = min(16, max(0, args.threads // max(1, jobs) - 1))
         print(f'CPU budget: {args.threads}; workers: {jobs}; crunch helpers per worker: {helpers}', flush=True)
         with ProcessPoolExecutor(max_workers=max(1, jobs)) as pool:
-            futures = [pool.submit(convert_file, (rel, path, stage, temporary, crunch, helpers, args.include_source_images, is_normal_map(rel, normal_maps))) for rel, path in tasks]
+            futures = [pool.submit(convert_file, (rel, path, stage, temporary, crunch, helpers, args.include_source_images, is_normal_map(rel, normal_maps), rel.with_suffix('').as_posix().lower() in physical_maps)) for rel, path in tasks]
             try:
                 for future in as_completed(futures):
                     entry = future.result()

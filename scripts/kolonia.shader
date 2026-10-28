@@ -458,6 +458,7 @@ textures/kolonia/jj_computers
  diffuseMap textures/kolonia/jj_computers_d
  normalMap textures/kolonia/jj_computers_n
  normalFormat X Y Z
+ normalScale 0.35 0.35 1
  physicalMap textures/kolonia/jj_computers_p
  glowMap textures/kolonia/jj_computers_g
  }
@@ -472,6 +473,7 @@ textures/kolonia/jj_supercomputer
  diffuseMap textures/kolonia/jj_supercomputer_d
  normalMap textures/kolonia/jj_supercomputer_n
  normalFormat X Y Z
+ normalScale 0.35 0.35 1
  physicalMap textures/kolonia/jj_supercomputer_p
  glowMap textures/kolonia/jj_supercomputer_g
  }
@@ -486,6 +488,7 @@ textures/kolonia/jj_cabinet_back
  diffuseMap textures/kolonia/jj_cabinet_back_d
  normalMap textures/kolonia/jj_cabinet_back_n
  normalFormat X Y Z
+ normalScale 0.35 0.35 1
  physicalMap textures/kolonia/jj_cabinet_back_p
  }
 }

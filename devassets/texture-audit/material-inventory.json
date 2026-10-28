@@ -1,0 +1,2510 @@
+{
+  "materials": [
+    {
+      "material": "textures/kolonia/amber",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/amber_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 0.0,
+          "interior_neighbor_mean_abs_difference": 0.0
+        },
+        "normalMap": {
+          "file": "textures/kolonia/amber_n.png",
+          "size": [
+            4096,
+            4096
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              113.0,
+              84.0,
+              247.0
+            ],
+            [
+              128.0,
+              128.0,
+              255.0
+            ],
+            [
+              142.0,
+              167.0,
+              255.0
+            ]
+          ],
+          "edge_mean_abs_difference": 2.0625,
+          "interior_neighbor_mean_abs_difference": 1.6972578347578346
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/amber_p.png",
+          "size": [
+            4096,
+            4096
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              0.0,
+              51.0,
+              0.0
+            ],
+            [
+              0.0,
+              51.0,
+              255.0
+            ],
+            [
+              0.0,
+              115.0,
+              255.0
+            ]
+          ]
+        },
+        "glowMap": {
+          "file": "textures/kolonia/amber_g.png",
+          "size": [
+            4096,
+            4096
+          ],
+          "mode": "RGB"
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/amber_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 0.0,
+          "interior_neighbor_mean_abs_difference": 0.0
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/amber_norad",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/amber_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 0.0,
+          "interior_neighbor_mean_abs_difference": 0.0
+        },
+        "normalMap": {
+          "file": "textures/kolonia/amber_n.png",
+          "size": [
+            4096,
+            4096
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              113.0,
+              84.0,
+              247.0
+            ],
+            [
+              128.0,
+              128.0,
+              255.0
+            ],
+            [
+              142.0,
+              167.0,
+              255.0
+            ]
+          ],
+          "edge_mean_abs_difference": 2.0625,
+          "interior_neighbor_mean_abs_difference": 1.6972578347578346
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/amber_p.png",
+          "size": [
+            4096,
+            4096
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              0.0,
+              51.0,
+              0.0
+            ],
+            [
+              0.0,
+              51.0,
+              255.0
+            ],
+            [
+              0.0,
+              115.0,
+              255.0
+            ]
+          ]
+        },
+        "glowMap": {
+          "file": "textures/kolonia/amber_g.png",
+          "size": [
+            4096,
+            4096
+          ],
+          "mode": "RGB"
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/amber_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 0.0,
+          "interior_neighbor_mean_abs_difference": 0.0
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/bark",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/bark_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB"
+        },
+        "normalMap": {
+          "file": "textures/kolonia/bark_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              122.0,
+              127.0,
+              255.0
+            ],
+            [
+              127.5,
+              128.0,
+              255.0
+            ],
+            [
+              133.0,
+              128.0,
+              255.0
+            ]
+          ]
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/bark_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              0.0,
+              199.0,
+              0.0
+            ],
+            [
+              0.0,
+              199.0,
+              0.0
+            ],
+            [
+              0.0,
+              199.0,
+              0.0
+            ]
+          ]
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/bark_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB"
+        }
+      },
+      "tiling_expected": false,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/bio",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/bio_d.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "normalMap": {
+          "file": "textures/kolonia/bio_n.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              95.0,
+              94.0,
+              248.0
+            ],
+            [
+              128.0,
+              128.0,
+              253.0
+            ],
+            [
+              160.0,
+              160.0,
+              255.0
+            ]
+          ]
+        },
+        "specularMap": {
+          "file": "textures/kolonia/bio_s.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "glowMap": {
+          "file": "textures/kolonia/bio_d.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/bio_d.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "tiling_expected": false,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/bio_norad",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/bio_d.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "normalMap": {
+          "file": "textures/kolonia/bio_n.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              95.0,
+              94.0,
+              248.0
+            ],
+            [
+              128.0,
+              128.0,
+              253.0
+            ],
+            [
+              160.0,
+              160.0,
+              255.0
+            ]
+          ]
+        },
+        "specularMap": {
+          "file": "textures/kolonia/bio_s.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "glowMap": {
+          "file": "textures/kolonia/bio_d.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/bio_d.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "tiling_expected": false,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/bridge_display",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/bridge_display_d.png",
+          "size": [
+            1024,
+            512
+          ],
+          "mode": "RGB"
+        },
+        "normalMap": {
+          "file": "textures/kolonia/flat_n.png",
+          "size": [
+            8,
+            8
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              128.0,
+              128.0,
+              255.0
+            ],
+            [
+              128.0,
+              128.0,
+              255.0
+            ],
+            [
+              128.0,
+              128.0,
+              255.0
+            ]
+          ]
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/display_p.png",
+          "size": [
+            8,
+            8
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              0.0,
+              92.0,
+              0.0
+            ],
+            [
+              0.0,
+              92.0,
+              0.0
+            ],
+            [
+              0.0,
+              92.0,
+              0.0
+            ]
+          ]
+        },
+        "glowMap": {
+          "file": "textures/kolonia/bridge_display_d.png",
+          "size": [
+            1024,
+            512
+          ],
+          "mode": "RGB"
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/bridge_display_d.png",
+          "size": [
+            1024,
+            512
+          ],
+          "mode": "RGB"
+        }
+      },
+      "tiling_expected": false,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/cave_aerial",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/cave_aerial_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 8.063802083333334,
+          "interior_neighbor_mean_abs_difference": 7.945242927276706
+        },
+        "normalMap": {
+          "file": "textures/kolonia/aerial_rocks_01_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              26.0,
+              34.0,
+              178.0
+            ],
+            [
+              130.0,
+              135.0,
+              239.0
+            ],
+            [
+              228.0,
+              222.0,
+              255.0
+            ]
+          ],
+          "edge_mean_abs_difference": 17.587972005208332,
+          "interior_neighbor_mean_abs_difference": 15.579652936271067
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/aerial_rocks_01_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              126.0,
+              139.0,
+              0.0
+            ],
+            [
+              206.0,
+              199.0,
+              0.0
+            ],
+            [
+              228.0,
+              242.0,
+              0.0
+            ]
+          ]
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/cave_aerial_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 8.063802083333334,
+          "interior_neighbor_mean_abs_difference": 7.945242927276706
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/cave_base",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/coast_sand_rocks_02_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 4.585693359375,
+          "interior_neighbor_mean_abs_difference": 4.985459976680813
+        },
+        "normalMap": {
+          "file": "textures/kolonia/coast_sand_rocks_02_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              47.0,
+              44.0,
+              191.0
+            ],
+            [
+              128.0,
+              128.0,
+              246.0
+            ],
+            [
+              213.0,
+              214.0,
+              255.0
+            ]
+          ],
+          "edge_mean_abs_difference": 10.478922526041666,
+          "interior_neighbor_mean_abs_difference": 11.690145075427964
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/coast_sand_rocks_02_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              147.0,
+              172.0,
+              0.0
+            ],
+            [
+              227.0,
+              218.0,
+              0.0
+            ],
+            [
+              254.0,
+              236.0,
+              0.0
+            ]
+          ]
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/coast_sand_rocks_02_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 4.585693359375,
+          "interior_neighbor_mean_abs_difference": 4.985459976680813
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/cave_fracture",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/rock_wall_10_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 4.572835286458333,
+          "interior_neighbor_mean_abs_difference": 5.127554591131839
+        },
+        "normalMap": {
+          "file": "textures/kolonia/rock_wall_10_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              26.0,
+              20.0,
+              165.0
+            ],
+            [
+              129.0,
+              134.0,
+              235.0
+            ],
+            [
+              229.0,
+              241.0,
+              255.0
+            ]
+          ],
+          "edge_mean_abs_difference": 18.118733723958332,
+          "interior_neighbor_mean_abs_difference": 17.475138565011296
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/rock_wall_10_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              23.0,
+              171.0,
+              0.0
+            ],
+            [
+              177.0,
+              195.0,
+              0.0
+            ],
+            [
+              246.0,
+              221.0,
+              0.0
+            ]
+          ]
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/rock_wall_10_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 4.572835286458333,
+          "interior_neighbor_mean_abs_difference": 5.127554591131839
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/cave_fungus_light",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/bio_d.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "normalMap": {
+          "file": "textures/kolonia/bio_n.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              95.0,
+              94.0,
+              248.0
+            ],
+            [
+              128.0,
+              128.0,
+              253.0
+            ],
+            [
+              160.0,
+              160.0,
+              255.0
+            ]
+          ]
+        },
+        "specularMap": {
+          "file": "textures/kolonia/bio_s.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "glowMap": {
+          "file": "textures/kolonia/bio_d.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/bio_d.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "tiling_expected": false,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/cave_ground",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/cave_ground_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 14.1630859375,
+          "interior_neighbor_mean_abs_difference": 14.305843122811838
+        },
+        "normalMap": {
+          "file": "textures/kolonia/cave_ground_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              39.0,
+              51.0,
+              189.0
+            ],
+            [
+              130.0,
+              134.0,
+              237.0
+            ],
+            [
+              217.0,
+              211.0,
+              254.0
+            ]
+          ],
+          "edge_mean_abs_difference": 19.030924479166668,
+          "interior_neighbor_mean_abs_difference": 18.058687414763476
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/cave_ground_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              132.0,
+              142.0,
+              0.0
+            ],
+            [
+              205.0,
+              199.0,
+              0.0
+            ],
+            [
+              227.0,
+              241.0,
+              0.0
+            ]
+          ]
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/cave_ground_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 14.1630859375,
+          "interior_neighbor_mean_abs_difference": 14.305843122811838
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/cool_light",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/diffuser_d.png",
+          "size": [
+            512,
+            512
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 3.6285807291666665,
+          "interior_neighbor_mean_abs_difference": 2.916775598295825
+        },
+        "normalMap": {
+          "file": "textures/kolonia/diffuser_n.png",
+          "size": [
+            512,
+            512
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              61.0,
+              61.0,
+              233.0
+            ],
+            [
+              128.0,
+              126.0,
+              241.0
+            ],
+            [
+              194.0,
+              194.0,
+              254.0
+            ]
+          ],
+          "edge_mean_abs_difference": 32.873697916666664,
+          "interior_neighbor_mean_abs_difference": 31.24367304712981
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/diffuser_p.png",
+          "size": [
+            512,
+            512
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              255.0,
+              117.0,
+              20.0
+            ],
+            [
+              255.0,
+              117.0,
+              20.0
+            ],
+            [
+              255.0,
+              117.0,
+              20.0
+            ]
+          ]
+        },
+        "glowMap": {
+          "file": "textures/kolonia/diffuser_d.png",
+          "size": [
+            512,
+            512
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 3.6285807291666665,
+          "interior_neighbor_mean_abs_difference": 2.916775598295825
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/diffuser_d.png",
+          "size": [
+            512,
+            512
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 3.6285807291666665,
+          "interior_neighbor_mean_abs_difference": 2.916775598295825
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/cool_norad",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/diffuser_d.png",
+          "size": [
+            512,
+            512
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 3.6285807291666665,
+          "interior_neighbor_mean_abs_difference": 2.916775598295825
+        },
+        "normalMap": {
+          "file": "textures/kolonia/diffuser_n.png",
+          "size": [
+            512,
+            512
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              61.0,
+              61.0,
+              233.0
+            ],
+            [
+              128.0,
+              126.0,
+              241.0
+            ],
+            [
+              194.0,
+              194.0,
+              254.0
+            ]
+          ],
+          "edge_mean_abs_difference": 32.873697916666664,
+          "interior_neighbor_mean_abs_difference": 31.24367304712981
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/diffuser_p.png",
+          "size": [
+            512,
+            512
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              255.0,
+              117.0,
+              20.0
+            ],
+            [
+              255.0,
+              117.0,
+              20.0
+            ],
+            [
+              255.0,
+              117.0,
+              20.0
+            ]
+          ]
+        },
+        "glowMap": {
+          "file": "textures/kolonia/diffuser_d.png",
+          "size": [
+            512,
+            512
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 3.6285807291666665,
+          "interior_neighbor_mean_abs_difference": 2.916775598295825
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/diffuser_d.png",
+          "size": [
+            512,
+            512
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 3.6285807291666665,
+          "interior_neighbor_mean_abs_difference": 2.916775598295825
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/deck",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/alloy_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 2.6227213541666665,
+          "interior_neighbor_mean_abs_difference": 2.4920673578458317
+        },
+        "normalMap": {
+          "file": "textures/kolonia/salvage_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              117.0,
+              120.0,
+              238.0
+            ],
+            [
+              127.0,
+              128.0,
+              255.0
+            ],
+            [
+              138.0,
+              137.0,
+              255.0
+            ]
+          ],
+          "edge_mean_abs_difference": 0.351806640625,
+          "interior_neighbor_mean_abs_difference": 0.4382012532949642
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/alloy_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              161.0,
+              75.0,
+              28.0
+            ],
+            [
+              250.0,
+              148.0,
+              54.0
+            ],
+            [
+              251.0,
+              195.0,
+              55.0
+            ]
+          ]
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/alloy_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 2.6227213541666665,
+          "interior_neighbor_mean_abs_difference": 2.4920673578458317
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/foliage",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/foliage_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB"
+        },
+        "normalMap": {
+          "file": "textures/kolonia/foliage_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              124.0,
+              124.0,
+              255.0
+            ],
+            [
+              128.0,
+              128.0,
+              255.0
+            ],
+            [
+              131.0,
+              131.0,
+              255.0
+            ]
+          ]
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/foliage_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              0.0,
+              145.0,
+              0.0
+            ],
+            [
+              0.0,
+              145.0,
+              0.0
+            ],
+            [
+              0.0,
+              145.0,
+              0.0
+            ]
+          ]
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/foliage_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB"
+        }
+      },
+      "tiling_expected": false,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/ivory",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/ship_panel_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 52.002848307291664,
+          "interior_neighbor_mean_abs_difference": 1.588665665137498
+        },
+        "normalMap": {
+          "file": "textures/kolonia/ship_panel_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              123.0,
+              123.0,
+              169.0
+            ],
+            [
+              127.0,
+              127.0,
+              254.0
+            ],
+            [
+              131.0,
+              131.0,
+              254.0
+            ]
+          ],
+          "edge_mean_abs_difference": 0.6209309895833334,
+          "interior_neighbor_mean_abs_difference": 1.544699719355561
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/ship_panel_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              0.0,
+              132.0,
+              35.0
+            ],
+            [
+              0.0,
+              132.0,
+              53.0
+            ],
+            [
+              0.0,
+              165.0,
+              130.0
+            ]
+          ]
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/ship_panel_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 52.002848307291664,
+          "interior_neighbor_mean_abs_difference": 1.588665665137498
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/ivory_planar",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/ship_panel_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 52.002848307291664,
+          "interior_neighbor_mean_abs_difference": 1.588665665137498
+        },
+        "normalMap": {
+          "file": "textures/kolonia/ship_panel_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              123.0,
+              123.0,
+              169.0
+            ],
+            [
+              127.0,
+              127.0,
+              254.0
+            ],
+            [
+              131.0,
+              131.0,
+              254.0
+            ]
+          ],
+          "edge_mean_abs_difference": 0.6209309895833334,
+          "interior_neighbor_mean_abs_difference": 1.544699719355561
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/ship_panel_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              0.0,
+              132.0,
+              35.0
+            ],
+            [
+              0.0,
+              132.0,
+              53.0
+            ],
+            [
+              0.0,
+              165.0,
+              130.0
+            ]
+          ]
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/ship_panel_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 52.002848307291664,
+          "interior_neighbor_mean_abs_difference": 1.588665665137498
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/jj_cabinet_back",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/jj_cabinet_back_d.png",
+          "size": [
+            512,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "normalMap": {
+          "file": "textures/kolonia/jj_cabinet_back_n.png",
+          "size": [
+            512,
+            1024
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              20.0,
+              67.0,
+              187.0
+            ],
+            [
+              127.0,
+              128.0,
+              253.0
+            ],
+            [
+              233.0,
+              184.0,
+              255.0
+            ]
+          ]
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/jj_cabinet_back_p.png",
+          "size": [
+            512,
+            1024
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              255.0,
+              115.0,
+              0.0
+            ],
+            [
+              255.0,
+              115.0,
+              0.0
+            ],
+            [
+              255.0,
+              115.0,
+              255.0
+            ]
+          ]
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/jj_cabinet_back_d.png",
+          "size": [
+            512,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "tiling_expected": false,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": [
+        "0.35 0.35 1"
+      ]
+    },
+    {
+      "material": "textures/kolonia/jj_computers",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/jj_computers_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB"
+        },
+        "normalMap": {
+          "file": "textures/kolonia/jj_computers_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              48.0,
+              65.0,
+              217.0
+            ],
+            [
+              128.0,
+              128.0,
+              255.0
+            ],
+            [
+              207.0,
+              182.0,
+              255.0
+            ]
+          ]
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/jj_computers_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              255.0,
+              115.0,
+              0.0
+            ],
+            [
+              255.0,
+              115.0,
+              0.0
+            ],
+            [
+              255.0,
+              214.0,
+              255.0
+            ]
+          ]
+        },
+        "glowMap": {
+          "file": "textures/kolonia/jj_computers_g.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB"
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/jj_computers_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB"
+        }
+      },
+      "tiling_expected": false,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": [
+        "0.35 0.35 1"
+      ]
+    },
+    {
+      "material": "textures/kolonia/jj_supercomputer",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/jj_supercomputer_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB"
+        },
+        "normalMap": {
+          "file": "textures/kolonia/jj_supercomputer_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              58.0,
+              76.0,
+              198.0
+            ],
+            [
+              128.0,
+              128.0,
+              254.0
+            ],
+            [
+              199.0,
+              178.0,
+              255.0
+            ]
+          ]
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/jj_supercomputer_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              255.0,
+              115.0,
+              0.0
+            ],
+            [
+              255.0,
+              115.0,
+              0.0
+            ],
+            [
+              255.0,
+              128.0,
+              255.0
+            ]
+          ]
+        },
+        "glowMap": {
+          "file": "textures/kolonia/jj_supercomputer_g.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB"
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/jj_supercomputer_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB"
+        }
+      },
+      "tiling_expected": false,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": [
+        "0.35 0.35 1"
+      ]
+    },
+    {
+      "material": "textures/kolonia/medical_display",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/medical_display_d.png",
+          "size": [
+            1024,
+            512
+          ],
+          "mode": "RGB"
+        },
+        "normalMap": {
+          "file": "textures/kolonia/flat_n.png",
+          "size": [
+            8,
+            8
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              128.0,
+              128.0,
+              255.0
+            ],
+            [
+              128.0,
+              128.0,
+              255.0
+            ],
+            [
+              128.0,
+              128.0,
+              255.0
+            ]
+          ]
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/display_p.png",
+          "size": [
+            8,
+            8
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              0.0,
+              92.0,
+              0.0
+            ],
+            [
+              0.0,
+              92.0,
+              0.0
+            ],
+            [
+              0.0,
+              92.0,
+              0.0
+            ]
+          ]
+        },
+        "glowMap": {
+          "file": "textures/kolonia/medical_display_d.png",
+          "size": [
+            1024,
+            512
+          ],
+          "mode": "RGB"
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/medical_display_d.png",
+          "size": [
+            1024,
+            512
+          ],
+          "mode": "RGB"
+        }
+      },
+      "tiling_expected": false,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/metal",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/alloy_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 2.6227213541666665,
+          "interior_neighbor_mean_abs_difference": 2.4920673578458317
+        },
+        "normalMap": {
+          "file": "textures/kolonia/salvage_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              117.0,
+              120.0,
+              238.0
+            ],
+            [
+              127.0,
+              128.0,
+              255.0
+            ],
+            [
+              138.0,
+              137.0,
+              255.0
+            ]
+          ],
+          "edge_mean_abs_difference": 0.351806640625,
+          "interior_neighbor_mean_abs_difference": 0.4382012532949642
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/alloy_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              161.0,
+              75.0,
+              28.0
+            ],
+            [
+              250.0,
+              148.0,
+              54.0
+            ],
+            [
+              251.0,
+              195.0,
+              55.0
+            ]
+          ]
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/alloy_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 2.6227213541666665,
+          "interior_neighbor_mean_abs_difference": 2.4920673578458317
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/moss",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/moss_d.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 3.7294921875,
+          "interior_neighbor_mean_abs_difference": 0.35595082630742914
+        },
+        "normalMap": {
+          "file": "textures/kolonia/moss_n.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              72.0,
+              70.0,
+              235.0
+            ],
+            [
+              128.0,
+              128.0,
+              248.0
+            ],
+            [
+              183.0,
+              185.0,
+              255.0
+            ]
+          ],
+          "edge_mean_abs_difference": 24.8076171875,
+          "interior_neighbor_mean_abs_difference": 4.233863330889541
+        },
+        "specularMap": {
+          "file": "textures/kolonia/moss_s.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/moss_d.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 3.7294921875,
+          "interior_neighbor_mean_abs_difference": 0.35595082630742914
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/night",
+      "maps": {
+        "qer_editorImage": {
+          "file": "textures/kolonia/rock_d.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/rock",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/strata_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 6.931559244791667,
+          "interior_neighbor_mean_abs_difference": 7.562002296615474
+        },
+        "normalMap": {
+          "file": "textures/kolonia/strata_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              54.0,
+              53.0,
+              191.0
+            ],
+            [
+              130.0,
+              126.0,
+              249.0
+            ],
+            [
+              210.0,
+              208.0,
+              255.0
+            ]
+          ],
+          "edge_mean_abs_difference": 9.583658854166666,
+          "interior_neighbor_mean_abs_difference": 9.957886795717311
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/strata_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              147.0,
+              178.0,
+              0.0
+            ],
+            [
+              239.0,
+              210.0,
+              0.0
+            ],
+            [
+              253.0,
+              233.0,
+              0.0
+            ]
+          ]
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/strata_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 6.931559244791667,
+          "interior_neighbor_mean_abs_difference": 7.562002296615474
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/salvage",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/alloy_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 2.6227213541666665,
+          "interior_neighbor_mean_abs_difference": 2.4920673578458317
+        },
+        "normalMap": {
+          "file": "textures/kolonia/salvage_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              117.0,
+              120.0,
+              238.0
+            ],
+            [
+              127.0,
+              128.0,
+              255.0
+            ],
+            [
+              138.0,
+              137.0,
+              255.0
+            ]
+          ],
+          "edge_mean_abs_difference": 0.351806640625,
+          "interior_neighbor_mean_abs_difference": 0.4382012532949642
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/alloy_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              161.0,
+              75.0,
+              28.0
+            ],
+            [
+              250.0,
+              148.0,
+              54.0
+            ],
+            [
+              251.0,
+              195.0,
+              55.0
+            ]
+          ]
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/alloy_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 2.6227213541666665,
+          "interior_neighbor_mean_abs_difference": 2.4920673578458317
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/ship_light",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/ship_light_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 0.36767578125,
+          "interior_neighbor_mean_abs_difference": 0.366609291035662
+        },
+        "normalMap": {
+          "file": "textures/kolonia/ship_light_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              127.0,
+              127.0,
+              255.0
+            ],
+            [
+              128.0,
+              127.5,
+              255.0
+            ],
+            [
+              128.0,
+              128.0,
+              255.0
+            ]
+          ],
+          "edge_mean_abs_difference": 0.0,
+          "interior_neighbor_mean_abs_difference": 0.05210877707213809
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/ship_light_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              0.0,
+              100.0,
+              0.0
+            ],
+            [
+              0.0,
+              102.0,
+              0.0
+            ],
+            [
+              0.0,
+              104.0,
+              0.0
+            ]
+          ]
+        },
+        "glowMap": {
+          "file": "textures/kolonia/ship_light_g.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB"
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/ship_light_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 0.36767578125,
+          "interior_neighbor_mean_abs_difference": 0.366609291035662
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/ship_light_norad",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/ship_light_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 0.36767578125,
+          "interior_neighbor_mean_abs_difference": 0.366609291035662
+        },
+        "normalMap": {
+          "file": "textures/kolonia/ship_light_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              127.0,
+              127.0,
+              255.0
+            ],
+            [
+              128.0,
+              127.5,
+              255.0
+            ],
+            [
+              128.0,
+              128.0,
+              255.0
+            ]
+          ],
+          "edge_mean_abs_difference": 0.0,
+          "interior_neighbor_mean_abs_difference": 0.05210877707213809
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/ship_light_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              0.0,
+              100.0,
+              0.0
+            ],
+            [
+              0.0,
+              102.0,
+              0.0
+            ],
+            [
+              0.0,
+              104.0,
+              0.0
+            ]
+          ]
+        },
+        "glowMap": {
+          "file": "textures/kolonia/ship_light_g.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB"
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/ship_light_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 0.36767578125,
+          "interior_neighbor_mean_abs_difference": 0.366609291035662
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/sign_amber",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/amber_light.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "glowMap": {
+          "file": "textures/kolonia/amber_light.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/amber_light.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "tiling_expected": false,
+      "normal_format": [],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/status_pulse",
+      "maps": {
+        "qer_editorImage": {
+          "file": "textures/kolonia/status_d.png",
+          "size": [
+            16,
+            16
+          ],
+          "mode": "RGB"
+        }
+      },
+      "tiling_expected": false,
+      "normal_format": [],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/wet_moss",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/coast_sand_rocks_02_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 4.585693359375,
+          "interior_neighbor_mean_abs_difference": 4.985459976680813
+        },
+        "normalMap": {
+          "file": "textures/kolonia/coast_sand_rocks_02_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              47.0,
+              44.0,
+              191.0
+            ],
+            [
+              128.0,
+              128.0,
+              246.0
+            ],
+            [
+              213.0,
+              214.0,
+              255.0
+            ]
+          ],
+          "edge_mean_abs_difference": 10.478922526041666,
+          "interior_neighbor_mean_abs_difference": 11.690145075427964
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/coast_sand_rocks_02_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              147.0,
+              172.0,
+              0.0
+            ],
+            [
+              227.0,
+              218.0,
+              0.0
+            ],
+            [
+              254.0,
+              236.0,
+              0.0
+            ]
+          ]
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/coast_sand_rocks_02_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 4.585693359375,
+          "interior_neighbor_mean_abs_difference": 4.985459976680813
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/wet_rock",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/coast_sand_rocks_02_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 4.585693359375,
+          "interior_neighbor_mean_abs_difference": 4.985459976680813
+        },
+        "normalMap": {
+          "file": "textures/kolonia/coast_sand_rocks_02_n.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              47.0,
+              44.0,
+              191.0
+            ],
+            [
+              128.0,
+              128.0,
+              246.0
+            ],
+            [
+              213.0,
+              214.0,
+              255.0
+            ]
+          ],
+          "edge_mean_abs_difference": 10.478922526041666,
+          "interior_neighbor_mean_abs_difference": 11.690145075427964
+        },
+        "physicalMap": {
+          "file": "textures/kolonia/coast_sand_rocks_02_p.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              147.0,
+              172.0,
+              0.0
+            ],
+            [
+              227.0,
+              218.0,
+              0.0
+            ],
+            [
+              254.0,
+              236.0,
+              0.0
+            ]
+          ]
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/coast_sand_rocks_02_d.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 4.585693359375,
+          "interior_neighbor_mean_abs_difference": 4.985459976680813
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    },
+    {
+      "material": "textures/kolonia/window",
+      "maps": {
+        "diffuseMap": {
+          "file": "textures/kolonia/night_ft.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 26.828938802083332,
+          "interior_neighbor_mean_abs_difference": 2.390581883604187
+        },
+        "normalMap": {
+          "file": "textures/kolonia/metal_n.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "percentiles_rgb": [
+            [
+              99.0,
+              98.0,
+              249.0
+            ],
+            [
+              128.0,
+              128.0,
+              254.0
+            ],
+            [
+              157.0,
+              157.0,
+              255.0
+            ]
+          ],
+          "edge_mean_abs_difference": 10.414388020833334,
+          "interior_neighbor_mean_abs_difference": 7.913917081602314
+        },
+        "specularMap": {
+          "file": "textures/kolonia/metal_s.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "glowMap": {
+          "file": "textures/kolonia/night_ft.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 26.828938802083332,
+          "interior_neighbor_mean_abs_difference": 2.390581883604187
+        },
+        "qer_editorImage": {
+          "file": "textures/kolonia/night_ft.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "edge_mean_abs_difference": 26.828938802083332,
+          "interior_neighbor_mean_abs_difference": 2.390581883604187
+        }
+      },
+      "tiling_expected": true,
+      "normal_format": [
+        "X Y Z"
+      ],
+      "normal_scale": []
+    }
+  ],
+  "missing_references": [],
+  "distinct_images": 65,
+  "scope": "Every material used by the compiled map; tiled image edge statistics are diagnostic, not a pass/fail proof."
+}
