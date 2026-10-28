@@ -1,0 +1,33 @@
+{
+  "bikes": [
+    {
+      "origin": "-411 -1818 31.9464",
+      "covered_surface_samples": 9488
+    },
+    {
+      "origin": "-514 -1818 31.9464",
+      "covered_surface_samples": 9488
+    },
+    {
+      "origin": "-617 -1818 31.9464",
+      "covered_surface_samples": 9488
+    }
+  ],
+  "removed_stale_brushes": 54,
+  "new_hulls": 42,
+  "passage_gaps": [
+    {
+      "gap_x": -464.5,
+      "human_clearance": true
+    },
+    {
+      "gap_x": -567.5,
+      "human_clearance": true
+    }
+  ],
+  "stale_upper_hull_points_clear": true,
+  "all_model_properties_preserved": true,
+  "all_other_brushes_and_uvs_preserved": true,
+  "bsp_compile": "Leak test passed; no warnings or errors; zero degenerate edges.",
+  "production_bsp_and_bake_changed": false
+}
