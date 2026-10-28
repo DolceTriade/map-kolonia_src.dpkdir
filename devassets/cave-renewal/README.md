@@ -24,7 +24,7 @@ original floor areas to avoid duplicate skins where structural brushes overlap.
 
 Current Coast Sand Rocks 02 remains the main surface. Rock Wall 10 supplies
 selected tilted fracture bands, and Aerial Rocks 01 adds ground/moss variation.
-The CC0 maps are retained at 2K. The cave_ground material again uses Coast Sand Rocks 02, restoring the floor material from before the cave rebuild at the existing 0.5 reference scale. The former Aerial Rocks ground derivative remains as unused authoring data. The aerial wall albedo is darkened to match the cave palette. names ending `_n` are OpenGL normals
+The CC0 maps are retained at 2K. The cave_ground material uses the original cavern floor from before the Coast Sand Rocks replacement: wet_rock_d, strata_n and wet_rock_p. The original maps are 2K, retaining the existing 0.5 reference scale. The former Aerial Rocks ground derivative remains as unused authoring data. The aerial wall albedo is darkened to match the cave palette. names ending `_n` are OpenGL normals
 and `_p` holds AO, roughness and metallic in RGB. The package script uses DXN
 for normal maps. New model shaders preserve authored normals without compiler
 nonplanar smoothing. Rebuild BSP/visibility/lighting after geometry changes.
