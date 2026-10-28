@@ -219,6 +219,7 @@ textures/kolonia/wet_rock
  diffuseMap textures/kolonia/coast_sand_rocks_02_d
  normalMap textures/kolonia/coast_sand_rocks_02_n
  normalFormat X Y Z
+ normalScale 0.65 0.65 1
  physicalMap textures/kolonia/coast_sand_rocks_02_p
 
 
@@ -234,6 +235,7 @@ textures/kolonia/wet_moss
  diffuseMap textures/kolonia/coast_sand_rocks_02_d
  normalMap textures/kolonia/coast_sand_rocks_02_n
  normalFormat X Y Z
+ normalScale 0.65 0.65 1
  physicalMap textures/kolonia/coast_sand_rocks_02_p
 
 
@@ -371,6 +373,7 @@ textures/kolonia/wet_rock_planar
  diffuseMap textures/kolonia/coast_sand_rocks_02_d
  normalMap textures/kolonia/coast_sand_rocks_02_n
  normalFormat X Y Z
+ normalScale 0.65 0.65 1
  physicalMap textures/kolonia/coast_sand_rocks_02_p
 
 
@@ -386,6 +389,7 @@ textures/kolonia/cave_fracture
  diffuseMap textures/kolonia/rock_wall_10_d
  normalMap textures/kolonia/rock_wall_10_n
  normalFormat X Y Z
+ normalScale 0.65 0.65 1
  physicalMap textures/kolonia/rock_wall_10_p
  }
 }
@@ -399,6 +403,7 @@ textures/kolonia/cave_aerial
  diffuseMap textures/kolonia/cave_aerial_d
  normalMap textures/kolonia/aerial_rocks_01_n
  normalFormat X Y Z
+ normalScale 0.65 0.65 1
  physicalMap textures/kolonia/aerial_rocks_01_p
  }
 }
@@ -424,6 +429,7 @@ textures/kolonia/cave_base
  diffuseMap textures/kolonia/coast_sand_rocks_02_d
  normalMap textures/kolonia/coast_sand_rocks_02_n
  normalFormat X Y Z
+ normalScale 0.65 0.65 1
  physicalMap textures/kolonia/coast_sand_rocks_02_p
 
 
