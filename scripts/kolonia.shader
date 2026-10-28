@@ -406,13 +406,13 @@ textures/kolonia/cave_aerial
 // Cave renewal: CC0 Poly Haven scans, OpenGL tangent normals and ARM data.
 textures/kolonia/cave_ground
 {
- qer_editorImage textures/kolonia/cave_ground_d
+ qer_editorImage textures/kolonia/coast_sand_rocks_02_d
  q3map_shadeAngle 1
  {
- diffuseMap textures/kolonia/cave_ground_d
- normalMap textures/kolonia/cave_ground_n
+ diffuseMap textures/kolonia/coast_sand_rocks_02_d
+ normalMap textures/kolonia/coast_sand_rocks_02_n
  normalFormat X Y Z
- physicalMap textures/kolonia/cave_ground_p
+ physicalMap textures/kolonia/coast_sand_rocks_02_p
  }
 }
 
