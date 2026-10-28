@@ -4,6 +4,7 @@
 {
 "classname" "worldspawn"
 "message" "Kolonia"
+"_ambient" "6"
 // brush 0
 {
 brushDef
