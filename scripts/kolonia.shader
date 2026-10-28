@@ -403,7 +403,7 @@ textures/kolonia/cave_aerial
  }
 }
 
-// Cave renewal: CC0 Poly Haven scans, OpenGL tangent normals and ARM data.
+// Original cave floor: use a rougher floor-only ORM map to soften wet highlights.
 textures/kolonia/cave_ground
 {
  qer_editorImage textures/kolonia/wet_rock_d
@@ -412,7 +412,7 @@ textures/kolonia/cave_ground
  diffuseMap textures/kolonia/wet_rock_d
  normalMap textures/kolonia/strata_n
  normalFormat X Y Z
- physicalMap textures/kolonia/wet_rock_p
+ physicalMap textures/kolonia/wet_rock_floor_matte_p
  }
 }
 

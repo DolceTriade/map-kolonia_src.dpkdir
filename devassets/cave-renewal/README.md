@@ -30,3 +30,8 @@ for normal maps. New model shaders preserve authored normals without compiler
 nonplanar smoothing. Rebuild BSP/visibility/lighting after geometry changes.
 
 Sparse remaining skin edges are backed by simple five-plane fullclip prisms in the `cave_collision_edges` group. Source aerial diffuse is stored under `source-textures/` so the unused original is excluded from releases.
+
+The cave floor uses `wet_rock_floor_matte_p.png`, derived from the original
+`wet_rock_p.png`: its green roughness channel is `128 + 0.5 * original`
+(clamped to 255). Red occlusion and blue metalness are preserved. This affects
+only the `cave_ground` material and keeps the original albedo and normal map.
