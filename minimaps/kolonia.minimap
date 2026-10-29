@@ -2,6 +2,6 @@
 	backgroundColor 0.0 0.0 0.0 0.333
 	zone {
 		bounds 0 0 0 0 0 0
-		image "minimaps/kolonia" -3104.000000 -4000.000000 4896.000000 4000.000000
+		image "minimaps/kolonia" -2848.000000 -3800.000000 4752.000000 3800.000000
 	}
 }

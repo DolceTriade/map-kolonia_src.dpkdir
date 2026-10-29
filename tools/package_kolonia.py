@@ -20,6 +20,16 @@ EXCLUDED_DIRS = {'build', '__pycache__', 'tools', 'devassets'}
 # Both Quake and native OpenGL cubemap faces need lossless edges to avoid seams.
 SKY_FACE_SUFFIXES = ('_bk', '_dn', '_ft', '_lf', '_rt', '_up',
                      '_px', '_nx', '_py', '_ny', '_pz', '_nz')
+# Low-detail assets reviewed individually. Keep detailed rock scans and the
+# 4K amber normal/glow/physical maps at their authored resolution.
+RESIZE_LIMITS = {
+    f'textures/kolonia/{stem}_{channel}': 512
+    for stem in ('bark', 'foliage') for channel in ('d', 'n', 'p')
+}
+RESIZE_LIMITS.update({
+    f'textures/kolonia/ship_light_{channel}': 512
+    for channel in ('d', 'n', 'p', 'g')
+})
 
 
 def fail(message):
@@ -59,28 +69,56 @@ def is_normal_map(rel, shader_paths):
             or rel.stem.lower().endswith(('_n', '_norm', '_normal')))
 
 
+def resized_image(image, rel, lossless, enabled):
+    """Return an optional package-only image copy and a reason for resizing."""
+    if not enabled or lossless or rel.parts[0].lower() != 'textures':
+        return None, None
+    # A uniform RGBA image has no spatial information to lose. Keep a 4x4
+    # block so all CRN/DXT formats, including DXN normals, can encode it.
+    if all(low == high for low, high in image.getextrema()):
+        if image.size != (4, 4):
+            return image.resize((4, 4), Image.Resampling.NEAREST), 'uniform'
+        return None, None
+    limit = RESIZE_LIMITS.get(rel.with_suffix('').as_posix().lower())
+    if limit and max(image.size) > limit:
+        ratio = limit / max(image.size)
+        size = tuple(max(1, round(dimension * ratio)) for dimension in image.size)
+        # Normal and physical maps are channel data: Pillow filters the stored
+        # channels directly; crunch subsequently renormalizes DXN normals.
+        return image.resize(size, Image.Resampling.LANCZOS), 'reviewed'
+    return None, None
+
+
 def convert_file(task):
-    rel, path, stage, temporary, crunch, helpers, keep_sources, normal_map, physical_map = task
+    rel, path, stage, temporary, crunch, helpers, keep_sources, normal_map, physical_map, resize = task
     ext = rel.suffix.lower()
     target = rel
     action = 'copy'
     if ext in RASTER:
         lossless = ((rel.parts[0] == 'maps' and rel.name.startswith('lm_'))
-                    or rel.stem.lower().endswith(SKY_FACE_SUFFIXES))
+                    or rel.stem.lower().endswith(SKY_FACE_SUFFIXES)
+                    # Preserve the amber tile pattern and its normal/physical
+                    # channels exactly; CRN compression produces visible artifacts.
+                    or (rel.parent.as_posix().lower() == 'textures/kolonia'
+                        and rel.stem.lower().startswith('amber_')))
         target = rel.with_suffix('.webp' if lossless else '.crn')
         action = 'lossless-webp' if lossless else 'crunch'
         dst = stage / target
         dst.parent.mkdir(parents=True, exist_ok=True)
         with Image.open(path) as original:
             with original.convert('RGBA' if 'A' in original.getbands() or 'transparency' in original.info else 'RGB') as image:
+                resized, resize_reason = resized_image(image, rel, lossless, resize)
+                render = resized if resized is not None else image
+                if resized is not None:
+                    action += f'-resized-{image.width}x{image.height}-to-{render.width}x{render.height}-{resize_reason}'
                 if lossless:
-                    image.save(dst, 'WEBP', lossless=True, quality=100, method=6, exact=True)
+                    render.save(dst, 'WEBP', lossless=True, quality=100, method=6, exact=True)
                 else:
                     # Each process owns its transient file; concurrent conversions
                     # must never share the old input.tga path.
                     with tempfile.TemporaryDirectory(prefix='image-', dir=temporary) as image_work:
                         tga = Path(image_work) / 'input.tga'
-                        image.save(tga, 'TGA')
+                        render.save(tga, 'TGA')
                         cmd = [crunch, '-helperThreads', str(helpers), '-noNormalDetection', '-file', str(tga)]
                         if normal_map:
                             # Vector data must be filtered linearly, not as sRGB.
@@ -94,6 +132,8 @@ def convert_file(task):
                         result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
                         if result.returncode or not dst.is_file() or not dst.stat().st_size:
                             raise RuntimeError(f'Image conversion failed: {rel}\n{result.stdout}')
+                if resized is not None:
+                    resized.close()
         if keep_sources:
             original = stage / 'devassets/source-images' / rel
             original.parent.mkdir(parents=True, exist_ok=True)
@@ -102,7 +142,9 @@ def convert_file(task):
         dst = stage / target
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(path, dst)
-    return {'source':str(rel), 'packaged':str(target), 'action':('crunch-dxn' if normal_map and action == 'crunch' else action)}
+    if normal_map and action.startswith('crunch'):
+        action = action.replace('crunch', 'crunch-dxn', 1)
+    return {'source':str(rel), 'packaged':str(target), 'action':action}
 
 
 def main():
@@ -115,6 +157,7 @@ def main():
     parser.add_argument('--jobs', type=int, help='Concurrent file workers (default: CPU budget); fewer jobs give crunch more helper threads')
     parser.add_argument('--navmesh-dir', type=Path, help='Optional engine-generated navmeshes to include')
     parser.add_argument('--include-source-images', action='store_true', help='Also keep original images under devassets/source-images/')
+    parser.add_argument('--no-resize', action='store_true', help='Keep all packaged images at their original dimensions')
     args = parser.parse_args()
     source = args.source.resolve()
     if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9.+-]*', args.version):
@@ -131,7 +174,7 @@ def main():
     if not crunch:
         fail('crunch not found; install DaemonEngine/crunch or pass --crunch /path/to/crunch.')
     if not features.check('webp'):
-        fail('Pillow needs WebP support for lossless lightmap and skybox conversion.')
+        fail('Pillow needs WebP support for lossless lightmap, skybox and amber conversion.')
     args.output_dir.mkdir(parents=True, exist_ok=True)
     output = args.output_dir.resolve() / f'map-kolonia_{args.version}.dpk'
     if output.exists():
@@ -184,7 +227,7 @@ def main():
         helpers = min(16, max(0, args.threads // max(1, jobs) - 1))
         print(f'CPU budget: {args.threads}; workers: {jobs}; crunch helpers per worker: {helpers}', flush=True)
         with ProcessPoolExecutor(max_workers=max(1, jobs)) as pool:
-            futures = [pool.submit(convert_file, (rel, path, stage, temporary, crunch, helpers, args.include_source_images, is_normal_map(rel, normal_maps), rel.with_suffix('').as_posix().lower() in physical_maps)) for rel, path in tasks]
+            futures = [pool.submit(convert_file, (rel, path, stage, temporary, crunch, helpers, args.include_source_images, is_normal_map(rel, normal_maps), rel.with_suffix('').as_posix().lower() in physical_maps, not args.no_resize)) for rel, path in tasks]
             try:
                 for future in as_completed(futures):
                     entry = future.result()

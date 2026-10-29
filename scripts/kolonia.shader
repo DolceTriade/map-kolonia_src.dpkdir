@@ -106,7 +106,8 @@ textures/kolonia/night
 	surfaceparm sky
 	surfaceparm noimpact
 	surfaceparm nolightmap
-	q3map_skyLight 30 3
+	q3map_skyLight 30 3 0 90 0
+	q3map_lightImage textures/kolonia/night_pz
 	q3map_lightRGB 0.25 0.35 0.55
 	skyparms textures/kolonia/night 512 -
 }
@@ -115,13 +116,14 @@ textures/kolonia/window
 {
  q3map_nonplanar
  q3map_shadeAngle 60
- qer_editorImage textures/kolonia/night_ft
+ qer_editorImage textures/kolonia/night_ny
  {
- diffuseMap textures/kolonia/night_ft
+ diffuseMap textures/kolonia/night_ny
  normalMap textures/kolonia/metal_n
  normalFormat X Y Z
  specularMap textures/kolonia/metal_s
- glowMap textures/kolonia/night_ft
+ glowMap textures/kolonia/night_ny
+ tcMod transform -1 0 0 1 1 0
  }
 }
 
@@ -219,7 +221,7 @@ textures/kolonia/wet_rock
  diffuseMap textures/kolonia/coast_sand_rocks_02_d
  normalMap textures/kolonia/coast_sand_rocks_02_n
  normalFormat X Y Z
- normalScale 0.65 0.65 1
+ normalScale 1.15 1.15 1
  physicalMap textures/kolonia/coast_sand_rocks_02_p
 
 
@@ -235,7 +237,7 @@ textures/kolonia/wet_moss
  diffuseMap textures/kolonia/coast_sand_rocks_02_d
  normalMap textures/kolonia/coast_sand_rocks_02_n
  normalFormat X Y Z
- normalScale 0.65 0.65 1
+ normalScale 1.15 1.15 1
  physicalMap textures/kolonia/coast_sand_rocks_02_p
 
 
@@ -373,7 +375,7 @@ textures/kolonia/wet_rock_planar
  diffuseMap textures/kolonia/coast_sand_rocks_02_d
  normalMap textures/kolonia/coast_sand_rocks_02_n
  normalFormat X Y Z
- normalScale 0.65 0.65 1
+ normalScale 1.15 1.15 1
  physicalMap textures/kolonia/coast_sand_rocks_02_p
 
 
@@ -389,7 +391,7 @@ textures/kolonia/cave_fracture
  diffuseMap textures/kolonia/rock_wall_10_d
  normalMap textures/kolonia/rock_wall_10_n
  normalFormat X Y Z
- normalScale 0.65 0.65 1
+ normalScale 1.15 1.15 1
  physicalMap textures/kolonia/rock_wall_10_p
  }
 }
@@ -403,7 +405,7 @@ textures/kolonia/cave_aerial
  diffuseMap textures/kolonia/cave_aerial_d
  normalMap textures/kolonia/aerial_rocks_01_n
  normalFormat X Y Z
- normalScale 0.65 0.65 1
+ normalScale 1.15 1.15 1
  physicalMap textures/kolonia/aerial_rocks_01_p
  }
 }
@@ -429,7 +431,7 @@ textures/kolonia/cave_base
  diffuseMap textures/kolonia/coast_sand_rocks_02_d
  normalMap textures/kolonia/coast_sand_rocks_02_n
  normalFormat X Y Z
- normalScale 0.65 0.65 1
+ normalScale 1.15 1.15 1
  physicalMap textures/kolonia/coast_sand_rocks_02_p
 
 

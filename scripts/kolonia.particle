@@ -1,0 +1,27 @@
+particles/kolonia/broken_pipe_steam
+{
+    ejector
+    {
+        particle
+        {
+            shader sync gfx/sprites/smoke
+            displacement 0 0 0 ~2
+            velocityType static
+            velocityDir linear
+            velocityMagnitude 48~12
+            velocity 0.29 -0.39 0.87 ~8
+            accelerationType static
+            accelerationDir linear
+            accelerationMagnitude 16
+            acceleration 0 0 1 ~5
+            radius 0 4~1 22~4
+            alpha 0 0.32 0
+            color 0 { 0.75 0.78 0.80 } -
+            rotation 0 0~360 90~180
+            lifeTime 1500~300
+        }
+        count infinite
+        delay 0
+        period 120 - ~20%
+    }
+}

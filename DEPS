@@ -1,1 +1,2 @@
 unvanquished
+res-ambient

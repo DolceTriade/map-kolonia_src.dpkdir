@@ -35,8 +35,8 @@ positions was replaced with 32 fitted common/fullclip hulls.
 Diagnostic geometry and lighting builds remain outside the source package.
 Rebuild release lighting and navigation before reviewing in game.
 
-Wall normal strength is 0.65 in the cave rock shaders, reducing overly dark
-normal-mapped patches while retaining relief. The cave_base, cave_aerial and
-cave_fracture preview materials in rock-uv.blend use the same strength. The
-original images and compiled lighting remain unchanged. Texture/UV transitions
-remain a separate issue; see ../texture-audit/README.md.
+Wall normal strength is 1.15 in the cave rock shaders, slightly stronger than
+the default. The cave_base, cave_aerial and cave_fracture preview materials in
+rock-uv.blend use the same strength. The original images and compiled lighting
+remain unchanged. Texture/UV transitions remain a separate issue; see
+../texture-audit/README.md.
